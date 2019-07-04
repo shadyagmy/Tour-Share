@@ -10,22 +10,18 @@ function navBarSelectDetailsShow() {
   $('.nav_search-box-details').css("display", "flex");
   clearInterval(blurTime);
 
-  if ($(window).width() <= 991) {
-    $('.nav_search-box-city').css('marginBottom', 60  );
-  } 
-  if ($(window).width() <= 540) {
-    $('.nav_search-box-city').css('marginBottom', 95  );
-  }  
 }
 
 // Hide navbar navbar box details 
 function navBarSelectDetailsHide() {
-  blurTime = setTimeout(function() {
-    $('.nav_search-box-details').slideUp(300)
-  }, 100);
-
-  if ($(window).width() <= 991) {
-    $('.nav_search-box-city').css('marginBottom', 30 );
+  if ($(window).width() > 991) {
+    blurTime = setTimeout(function() {
+      $('.nav_search-box-details').slideUp(300)
+    }, 1000);
+  } else {
+    blurTime = setTimeout(function() {
+      $('.nav_search-box-details').slideUp(300)
+    }, 100);
   }
 }
 

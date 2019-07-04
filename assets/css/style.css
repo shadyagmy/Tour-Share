@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 .navbar {
     padding: 10px 0;
     background-color: #fff !important;
+    max-height: 74px;
 }
 
 .navbar-collapse {
@@ -50,6 +51,16 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 .navbar-icon-top .navbar-nav {
     align-items: center;
     
+}
+
+.navbar-nav.left_nav {
+    max-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_search-box-details {
+    order: 4;
 }
 
 .navbar-brand .img-fluid {
@@ -80,17 +91,14 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 
 /* NAV SEARCH Details POP UP BOX */
 .nav_search-box-details {
-    position: absolute;
-    top: 28px;
-    left: -45px;
     background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 17px 10px 10px;
-    width: 433px;
     border-radius: 3px;
-    z-index: 9999;
+    order: 4;
+
     display: none;
 
 
@@ -180,6 +188,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 @media all and  (max-width: 991px) {
 
     .navbar {
+        max-height: none;
         padding: 6px 0;
         box-shadow: 0 1px 1px #efefef;
     }
@@ -203,8 +212,15 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         transition: all ease .4s;
     }
 
-    .left_nav .nav_search-box-city {
-       
+    .navbar-nav.left_nav {
+        max-height: none;
+       flex-direction: column;
+       width: 80%;
+    }
+
+    .nav_search-box input,
+    .nav_search-box input::placeholder {
+        font-weight: normal;
     }
 
     .navbar-icon-top .right_nav {
@@ -213,21 +229,18 @@ h1,h2,h3,h4,h5,h6,p,a,button {
     }
 
     .nav_search-box-details {
-        padding-top: 8px;
-        left: -8px;
-        top: 30px;
+        padding-top: 0px;
         flex-wrap: wrap;
-        min-width: 50vw;
+        min-width: 70vw;
         justify-content: flex-start;
-        height: 40px;
+        order: 0;
+        margin-bottom: 20px;
+      
      
   
     }
 
-    .nav_search-box-details select, 
-    .nav_search-box-details .btn {
-        margin-bottom: 6rem;
-    }
+   
 
     .nav_search-box-details .btn {
         font-size: 13px;
@@ -278,6 +291,8 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         margin-bottom: 0px;
         margin-top: 7px;    
     }
+
+
 }
 
 @media all and (max-width: 540px) {
@@ -293,34 +308,24 @@ h1,h2,h3,h4,h5,h6,p,a,button {
     }
 
     .left_nav .nav_search-box {
-       width: 100%;
+        width: 90%;
         
     }
 
     .nav_search-box-details select, .nav_search-box-details .btn {
-        margin-bottom: .5rem;
+        margin-bottom: .9rem;
     }
 
     .nav_search-box-details {
-        padding-top: 8px;
-        left: -8px;
-        top: 30px;
+        padding-top: 0px;
         flex-wrap: wrap;
-        max-width: 130%;
+        max-width: 100%;
         justify-content: flex-start;
-        height: 60px;
-       
-     
-  
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 }
 
-@media all and (max-width: 339px) {
-    .left_nav .nav_search-box-city {
-        /* margin-bottom: 125px; */
-       
-    }
-}
 
 
 
