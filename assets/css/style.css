@@ -219,12 +219,9 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         flex-wrap: wrap;
         min-width: 50vw;
         justify-content: flex-start;
-        height: 70px;
+        height: 40px;
      
-      
-       
-      
-       
+  
     }
 
     .nav_search-box-details select, 
@@ -245,7 +242,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         padding: 10px 10px;
         border: 1px solid #e6ecf3;
         border-radius: 1px;
-        min-height: 250px;
+        min-height: 225px;
     }
 
     .navbar-icon-top .right_nav {
@@ -295,15 +292,32 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         font-size: 1.1rem;
     }
 
-    .left_nav .nav_search-box-city {
-        margin-bottom: 90px;
-        width:200px;
+    .left_nav .nav_search-box {
+       width: 100%;
+        
+    }
+
+    .nav_search-box-details select, .nav_search-box-details .btn {
+        margin-bottom: .5rem;
+    }
+
+    .nav_search-box-details {
+        padding-top: 8px;
+        left: -8px;
+        top: 30px;
+        flex-wrap: wrap;
+        max-width: 130%;
+        justify-content: flex-start;
+        height: 60px;
+       
+     
+  
     }
 }
 
 @media all and (max-width: 339px) {
     .left_nav .nav_search-box-city {
-        margin-bottom: 125px;
+        /* margin-bottom: 125px; */
        
     }
 }

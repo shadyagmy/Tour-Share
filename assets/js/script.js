@@ -11,7 +11,10 @@ function navBarSelectDetailsShow() {
   clearInterval(blurTime);
 
   if ($(window).width() <= 991) {
-    $('.nav_search-box-city').css('marginBottom', 90  );
+    $('.nav_search-box-city').css('marginBottom', 60  );
+  } 
+  if ($(window).width() <= 540) {
+    $('.nav_search-box-city').css('marginBottom', 95  );
   }  
 }
 
@@ -22,7 +25,7 @@ function navBarSelectDetailsHide() {
   }, 100);
 
   if ($(window).width() <= 991) {
-    $('.nav_search-box-city').css('marginBottom', 25 );
+    $('.nav_search-box-city').css('marginBottom', 30 );
   }
 }
 
