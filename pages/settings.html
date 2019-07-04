@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tukshare - Settings</title>
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="">
+
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Tukshare Platform" />
+  <meta name="keywords" content="Tukshare, tourism, egypt, attractions" />
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark primary-bg-color fixed-top">
+    <div class="container pl-2 pr-2">
+      <a class="navbar-brand" href="#">
+        <img class=" img-fluid" src="../assets/img/logo3.png" alt="card image" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-newspaper-o"></i>
+              Blog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-user-circle"></i>
+              Profile
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-danger">0</span>
+              </i>
+              Messages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-shopping-cart">
+                <span class="badge badge-danger">2</span>
+              </i>
+              Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-sign-out"></i>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="page-layout ml-2 mr-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 page-content mt-4 py-md-0 px-sm-2 py-sm-3">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#basic-info" role="tab" aria-controls="nav-info" aria-selected="true">
+                <i class="fa fa-user"></i> Basic Info.
+              </a>
+              <a class="nav-item nav-link" id="nav-security-tab" data-toggle="tab" href="#account-security" role="tab" aria-controls="nav-trips" aria-selected="false">
+                <i class="fa fa-lock"></i> Account Security
+              </a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="nav-basic-info-tab">
+              <form class="px-sm-2 py-sm-4 px-md-5 py-md-5">
+                <h2 class="font-weight-bold mb-4 primary-color" style="border-bottom: 1px solid #082066">Bio</h2>
+                <div class="form-group">
+                  <textarea class="form-control" id="bio" rows="5">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          </textarea>
+                </div>
+                <h2 class="font-weight-bold mb-4 mt-5 primary-color" style="border-bottom: 1px solid #082066">Basic Information</h2>
+                <div class="form-group">
+                  <label class="primary-color" for="fullname">Full Name</label>
+                  <input type="text" id="fullname" class="form-control" value="John Doe">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="age">Age</label>
+                  <input type="text" class="form-control" id="age" value="22">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="city">City</label>
+                  <input type="text" class="form-control" id="city" value="Luxor">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="country">Country</label>
+                  <input type="text" class="form-control" id="country" value="Egypt">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color">Upload Profile Photo</label>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn primary-border-color btn-file">
+                            Browse… <input type="file" id="imgInp">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                </div>
+                <div class="form-group">
+                  <label class="primary-color">Upload Cover Photo</label>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn primary-border-color btn-file">
+                            Browse… <input type="file" id="imgInp">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                </div>
+                <div class="form-group">
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-save"></i> Save Changes
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="account-security" role="tabpanel" aria-labelledby="nav-account-security-tab">
+              <form class="px-sm-2 py-sm-3 px-md-5 py-md-5">
+                <div class="form-group">
+                  <label class="primary-color" for="email">E-mail Address</label>
+                  <input type="email" class="form-control" id="email" value="john.doe@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label class="primary-color" for="phone">Phone Number</label>
+                  <input type="text" class="form-control" id="phone" value="011-222-222-33">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="currPass">Current Password</label>
+                  <input type="password" class="form-control" id="currPass" placeholder="Enter Current Password">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="newPass">New Password</label>
+                  <input type="password" class="form-control" id="facebook" placeholder="Enter New Password">
+                </div>
+                <div class="form-group">
+                  <label class="primary-color" for="confPass">Phone Number</label>
+                  <input type="password" class="form-control" id="confPass" placeholder="Confirm New Password">
+                </div>
+                <div class="form-group">
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-save"></i> Save Changes
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer primary-bg-color">
+    <div class="container">
+      <div class="row">
+        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <img class=" img-fluid my-3" src="../assets/img/logo3.png" alt="card image" width="200">
+          <!--headin5_amrc-->
+          <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+          <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+          <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+        </div>
+
+
+
+
+
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+
+
+        <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+          <!--headin5_amrc ends here-->
+          <div class="row mx-1">
+            <form>
+              <p style="font-size: .85em">Subscribe to our newsletter</p>
+              <div class="form-row">
+                <div class="form-group col-md-10">
+                  <input id="subscribeInput" type="email" class="form-control" placeholder="Email Address">
+                </div>
+
+                <div class="form-group col-md-2 search-btn">
+                  <button id="subscribeBtn" class="btn btn-primary form-control"><i class="fa fa-envelope"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="social_links px-0">
+            <li class="px-0"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center mt-4">&copy; 2019 <a href="#">Tukshare</a> | All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+
+
+  <!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+</body>
+
+</html>

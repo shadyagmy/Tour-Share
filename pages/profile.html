@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tukshare - Profile</title>
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="">
+
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Tukshare Platform" />
+  <meta name="keywords" content="Tukshare, tourism, egypt, attractions" />
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark primary-bg-color fixed-top">
+    <div class="container pl-2 pr-2">
+      <a class="navbar-brand" href="#">
+        <img class=" img-fluid" src="../assets/img/logo3.png" alt="card image" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-newspaper-o"></i>
+              Blog
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-user-circle"></i>
+              Profile
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-danger">0</span>
+              </i>
+              Messages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-sign-out"></i>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="page-layout ml-2 mr-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 page-content pl-0 pr-0 pb-4" style="border-top: 0;">
+          <!-- Cover Image -->
+          <div class="cover-img">
+            <img src="../assets/img/Tukshare.hero.png" class="img-fluid w-100" alt="Cover image">
+          </div>
+          <div class="row">
+
+            <div class="col-md-9 col-sm-12">
+              <!-- Profile Picture and Username-->
+              <div class="profile-img ml-md-5 ml-xs-2 ">
+                <img src="../assets/img/avatar.jpg" alt="profile" class="rounded img-fluid mr-2">
+                <div class="username">
+                  <h2>John Doe</h2>
+                  <span style="display: block;">Tour Guide</span>
+                  <span class="rate"><i class="fa fa-star"></i> 4.4</span>
+                </div>
+              </div>
+            </div>
+            <!-- Adding Trip Button -->
+            <div class="add-trip-btn col-md-2 col-sm-12 mt-4 ml-md-5 text-center">
+              <a href="#" class="btn btn-primary primary-bg-color btn-block">
+                <i class="fa fa-pencil-square-o"></i> Edit Profile
+              </a>
+              <a href="#" class="btn btn-light primary-color primary-border-color btn-block" data-toggle="modal"
+                data-target="#messageModal">
+                <i class="fa fa-envelope"></i> Message
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Adding New Trip -->
+      <div class="row">
+        <div class="col-sm-12 page-content mt-4 pl-0 pr-0">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab"
+                aria-controls="nav-info" aria-selected="true">
+                <i class="fa fa-user"></i> Personal Info.
+              </a>
+              <a class="nav-item nav-link" id="nav-trips-tab" data-toggle="tab" href="#nav-trips" role="tab"
+                aria-controls="nav-trips" aria-selected="false">
+                <i class="fa fa-map"></i> My Trirps
+              </a>
+              <a class="nav-item nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab"
+                aria-controls="nav-reviews" aria-selected="false">
+                <i class="fa fa-star"></i> Reviews
+              </a>
+            </div>
+          </nav>
+
+          <div class="tab-content px-md-5 py-md-4" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+              <div class="container">
+                <div class="row">
+                  <!-- Bio -->
+                  <div class="col-md-12 my-3 profile-bio">
+                    <h3 class="font-weight-bold primary-color">Bio</h3>
+                    <div class="bio-content my-5">
+                      <span class="d-block text-muted"><i class="fa fa-quote-left primary-color fa-3x"></i></span>
+                      <p class="my-3 px-5">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a
+                        type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                        of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                      </p>
+                      <span class="d-block float-right text-muted"><i class="fa fa-quote-right primary-color fa-3x"></i></span>
+                    </div>
+                  </div>
+
+                  <!-- Basic Info. -->
+                  <div class="col-md-12 my-3 profile-basic-info">
+                    <h3 class="font-weight-bold primary-color">Basic Information</h3>
+
+                    <div class="px-5 pt-3">
+                      <h4 class="mb-3"><span class="font-weight-bold primary-color">Full Name: </span> John Doe</h4>
+                      <h4 class="mb-3"><span class="font-weight-bold primary-color">Age: </span> 22</h4>
+                      <h4 class="mb-3"><span class="font-weight-bold primary-color">City: </span> Luxor</h4>
+                      <h4 class="mb-3"><span class="font-weight-bold primary-color">Country: </span> Egypt</h4>
+                      <h4 class="mb-3"><span class="font-weight-bold primary-color">E-mail Address: </span> <a href="mailto:john.doe@example.com">john.doe@example.com</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-trips" role="tabpanel" aria-labelledby="nav-trips-tab">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 mx-0">
+                    <div class="form-group px-0">
+                      <a href="#" class="btn btn-success btn-block">
+                        <i class="fa fa-plus"></i> Add New Trip
+                      </a>
+                    </div>
+                    <div class="divider d-flex my-4">
+                      <hr class="my-auto flex-grow-1">
+                      <div class="px-4">OR</div>
+                      <hr class="my-auto flex-grow-1">
+                    </div>
+                    <div class="form-group px-0">
+                      <label for="trip-type">Select Trips</label>
+                      <select class="form-control" id="trip-type">
+                        <option value="opened">Opened Trips</option>
+                        <option value="closed">Closed Trips</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="search-card col-md mt-3 pr-0">
+                    <!-- Card -->
+                    <div class="row primary-border-color pt-3 pb-3 mb-3 mx-0">
+                      <div class="col-md-3">
+                        <img class="w-100" src="https://via.placeholder.com/450x450">
+                      </div>
+                      <div class="col-md">
+                        <h3 class="card-title mb-0">
+                          <a href="#" class="primary-color">Trip Title</a>
+                        </h3>
+                        <span>by <a href="#">John Doe</a></span>
+                        <div class="row" style="min-height: 120px;">
+                          <div class="col" style="border-right: 1px solid #eee">
+                            <h2 class="h1 text-center mt-2" style="font-weight: 600;">
+                              <sup>$</sup>200
+                            </h2>
+                            <span class="primary-color d-block" style="font-size:0.7493rem !important;">
+                              <i class="fa fa-calendar"></i> Starts: <span class="font-weight-bold">Nov 4th, 2017 |
+                                07:00AM</span>
+                            </span>
+                            <span class="primary-color d-block" style="font-size:0.7493rem !important;">
+                              <i class="fa fa-clock-o"></i> Duration: <span class="font-weight-bold">4 Days</span>
+                            </span>
+                          </div>
+                          <div class="col col-md-3" style="border-right: 1px solid #eee">
+                            <h5 class="text-center font-weight-bold">Attractions</h5>
+                            <ul class="pl-1 mb-0" style="list-style: none;">
+                              <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Luxor</a></li>
+                              <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Aswan</a></li>
+                              <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Edfu</a></li>
+                            </ul>
+                            <a href="#"> <i class="fa fa-angle-double-right"></i> See more</a>
+                          </div>
+                          <div class="col">
+                            <div class="stars" style="width:inherit;">
+                              <span><i class="fa fa-star" style="color: gold;"></i></span>
+                              <span>4.2 (<a href="#">33 Reviews</a>)</span>
+                            </div>
+                            <div class="panel-group" id="accordion">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <a href="#" class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                      aria-expanded="true" aria-controls="collapseOne">
+                                      <i class="fa fa-angle-double-down"></i>
+                                      Includes
+                                    </a>
+                                  </a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in show">
+                                  <div class="panel-body">
+                                    <ul class="pl-1 mb-0" style="list-style: none;">
+                                      <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                                      <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                                      <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <a href="#" class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                      aria-expanded="false" aria-controls="collapseTwo">
+                                      <i class="fa fa-angle-double-right"></i>
+                                      Excludes
+                                    </a>
+                                  </a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <ul class="pl-1 mb-0" style="list-style: none;">
+                                      <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                                      <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                                      <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col">
+                            <div class="pull-right">
+                              <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-close"></i> Delete</a>
+                              <a href="#" class="btn btn-success btn-sm"><i class="fa fa-share"></i> Visit Trip Page</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <nav class="pagination-nav" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-3">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">12</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade reviews" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
+              <div class="container mt-3">
+                <div class="row">
+                  <!-- Rating Scorecard -->
+                  <div class="col-md-4 col-sm-12 text-center">
+                    <h2 class="h1 font-weight-bold">4.4</h2>
+                    <span class="text-success"><i class="fa fa-star fa-2x"></i></span>
+                    <span class="text-success"><i class="fa fa-star fa-2x"></i></span>
+                    <span class="text-success"><i class="fa fa-star fa-2x"></i></span>
+                    <span class="text-success"><i class="fa fa-star fa-2x"></i></span>
+                    <span class="text-success"><i class="fa fa-star-half-empty fa-2x"></i></span>
+                  </div>
+                  <div class="col-md-8 col-sm-12 d-none d-sm-block d-sm-none d-md-block">
+                    <div class="row">
+
+                      <div class="col-md-9 col-sm-9 mt-4">
+                        <div class="progress mb-3">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span class="font-weight-bold">50%</span>
+                          </div>
+                        </div>
+                        <div class="progress mb-3">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 35%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span class="font-weight-bold">35%</span>
+                          </div>
+                        </div>
+                        <div class="progress mb-3">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 11%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span class="font-weight-bold">11%</span>
+                          </div>
+                        </div>
+                        <div class="progress mb-3">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 2%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span class="font-weight-bold">2%</span>
+                          </div>
+                        </div>
+                        <div class="progress mb-3">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 2%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span class="font-weight-bold">2%</span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-3 col-sm-3 mt-3">
+                        <div class="5-stars mb-3">
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                        </div>
+                        <div class="4-stars mb-3">
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                        </div>
+                        <div class="3-stars mb-3">
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                        </div>
+                        <div class="2-stars mb-3">
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                        </div>
+                        <div class="1-stars mb-3">
+                          <span class="text-success"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                          <span class="text-secondary"><i class="fa fa-star fa-lg"></i></span>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Reviews  -->
+                <div class="card mt-5">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-2 text-center">
+                        <img src="../assets/img/avatar.jpg" class="rounded-circle img-fluid" />
+                        <p class="primary-color text-center mt-3">15 Minutes Ago</p>
+                      </div>
+                      <div class="col-md-10">
+                        <a class="d-block mt-3 text-dark" href="#"><strong>Maniruzzaman Akash</strong></a>
+                        <div class="d-block">
+                          <span class="">
+                            <i class="primary-color fa fa-map"></i> <a class="" href="#">Temple of Edfu</a>
+                          </span>
+                        </div>
+                        <div class="d-block">
+                          <span class=""><i class="text-warning fa fa-star"></i></span>
+                          <span class=""><i class="text-warning fa fa-star"></i></span>
+                          <span class=""><i class="text-warning fa fa-star"></i></span>
+                          <span class=""><i class="text-warning fa fa-star"></i></span>
+                          <span class=""><i class="text-secondary fa fa-star"></i></span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p>Lorem Ipsum is simply dummy text of the pr make but also the leap into electronic
+                          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing software like Aldus PageMaker including
+                          versions of Lorem Ipsum.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center mt-3">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                  </ul>
+                </nav>
+                <!-- Reviews -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer primary-bg-color">
+    <div class="container">
+      <div class="row">
+        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <img class=" img-fluid my-3" src="../assets/img/logo3.png" alt="card image" width="200">
+          <!--headin5_amrc-->
+          <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s</p>
+          <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+          <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+          <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+        </div>
+
+
+
+
+
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+
+
+        <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+          <!--headin5_amrc ends here-->
+          <div class="row mx-1">
+            <form>
+              <p style="font-size: .85em">Subscribe to our newsletter</p>
+              <div class="form-row">
+                <div class="form-group col-md-10">
+                  <input id="subscribeInput" type="email" class="form-control" placeholder="Email Address">
+                </div>
+
+                <div class="form-group col-md-2 search-btn">
+                  <button id="subscribeBtn" class="btn btn-primary form-control"><i class="fa fa-envelope"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="social_links px-0">
+            <li class="px-0"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center mt-4">&copy; 2019 <a href="#">Tukshare</a> | All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+  <!-- Trip Modal -->
+  <div class="modal fade bd-trip-info-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalCenterTitle">TRIP TITLE #1</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="w-100" src="https://via.placeholder.com/350x250" height="250">
+              </div>
+              <div class="col-md-7">
+                <span class="profit d-block">
+                  <span class="primary-color"><i class="fa fa-money"></i> Total Profit:</span>
+                  <span class="text-success"><i class="fa fa-usd"></i>2500</span>
+                </span>
+                <span class="tourists-num d-block">
+                  <span class="primary-color"><i class="fa fa-user-circle-o"></i> Total Tourists:</span>
+                  <span class="text-success">33</span>
+                </span>
+                <span class="tourists-num d-block">
+                  <span class="primary-color"><i class="fa fa-clock-o"></i> Trip Duration:</span>
+                  <span class="text-success">4 days</span>
+                </span>
+                <span class="tourists-num d-block">
+                  <span class="primary-color"><i class="fa fa-calendar-o"></i> Start/End Date:</span>
+                  <span class="text-success">25-11-2018 / 28-12-2018</span>
+                </span>
+                <h3 class="mt-2 font-weight-bold primary-color">Description </h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trip Modal -->
+
+  <!-- Registeration Modal -->
+  <div class="modal fade bd-signin-register-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: 0!important">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <h2 class="text-center mb-5">
+                  Sign In
+                </h2>
+                <form class="form sign-in">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <input type="text" name="email" class="form-control" id="email" placeholder="E-mail Address"
+                            autofocus>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group has-danger">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    </div>
+                    <div class="col-md-12">
+                      <a class="btn btn-block btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i> Sign in with Facebook
+                      </a>
+                      <a class="btn btn-block btn-social btn-google-plus">
+                        <i class="fa fa-google-plus"></i> Sign in with Google
+                      </a>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-md-1 col-sm-12">
+                <div class="ui vertical divider d-none d-md-block d-lg-block">
+                  OR
+                </div>
+
+                <div class="divider d-flex my-4 d-none d-sm-block d-md-none">
+                  <hr class="my-auto flex-grow-1">
+                  <div class="px-4">OR</div>
+                  <hr class="my-auto flex-grow-1">
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <h2 class="text-center">
+                  Sign Up
+                </h2>
+                <form class="form sign-up">
+                  <div class="row mb-4 mt-3">
+                    <div class="col-md-12">
+                      <a class="btn btn-block btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i> Sign up with Facebook
+                      </a>
+                      <a class="btn btn-block btn-social btn-google-plus">
+                        <i class="fa fa-google-plus"></i> Sign up with Google
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Name" autofocus>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                          <input type="text" name="email" class="form-control" id="email" placeholder="E-mail Address"
+                            autofocus>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group has-danger">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem">
+                            <i class="fa fa-repeat"></i>
+                          </div>
+                          <input type="password" name="password-confirmation" class="form-control" id="password-confirm"
+                            placeholder="Confirm Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-success btn-block">Register</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Message Modal -->
+  <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="exampleModalLabel">New message to @John.Doe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" value="@John.Doe" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success"><i class="fa fa-envelope"></i> Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+</body>
+
+</html>

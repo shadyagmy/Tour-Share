@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tukshare - Search Results</title>
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="">
+
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Tukshare Platform" />
+  <meta name="keywords" content="Tukshare, tourism, egypt, attractions" />
+  <!-- Website Properities (SEO) & Mobile Compatiblity -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <!-- Datepicker CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark primary-bg-color fixed-top">
+    <div class="container pl-2 pr-2">
+      <a class="navbar-brand" href="#">
+        <img class=" img-fluid" src="../assets/img/logo3.png" alt="card image" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-newspaper-o"></i>
+              Blog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-user-circle"></i>
+              Profile
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-danger">0</span>
+              </i>
+              Messages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-shopping-cart">
+                <span class="badge badge-danger">2</span>
+              </i>
+              Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-sign-out"></i>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-layout ml-2 mr-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 page-content px-3 py-4">
+          <div class="row">
+            <div class="col-md-12 px-4">
+              <h2 class="font-weight-bold mb-3 text primary-color">Search results</h2>
+              <form class="">
+                <div class="form-row pt-3">
+                  <div class="form-group col-md-4 city">
+                    <select class="form-control">
+                      <option selected>Choose City</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-4 pickup-location">
+                    <select class="form-control">
+                      <option selected>Choose Pickup Location</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-3 date-picker">
+                    <input type="text" class="form-control" id="datepicker" placeholder="Choose Date">
+                  </div>
+                  <div class="form-group col-md-1 search-btn">
+                    <button id="searchBtn" class="btn btn-block btn-primary form-control"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+                <div class="ui horizontal divider">
+                  <a class="btn btn-primary btn-sm" style="margin-bottom: -3px;" data-toggle="collapse" href="#filtersCollapse" role="button" aria-expanded="false" aria-controls="filtersCollapse">
+                    <i class="fa fa-filter"></i> Filters
+                  </a>
+                </div>
+                <div class="form-row collapse in" id="filtersCollapse">
+                  <div class="col-md-6">
+                    <div class="filters px-md-3" style="border:none;">
+                      <h5 class="primary-color">
+                        Categories
+                      </h5>
+                      <ul class="px-3 categories" id="cat-collapse">
+                        <li>
+                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="TopRatedTours">
+                            <label class="custom-control-label" for="TopRatedTours">Top Rated Tours</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="BestSellersTours">
+                            <label class="custom-control-label" for="BestSellersTours">Best Sellers Tours</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="LastMinuteDeals">
+                            <label class="custom-control-label" for="LastMinuteDeals">Last Minute Deals</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="NearbyTours">
+                            <label class="custom-control-label" for="NearbyTours">Nearby Tours</label>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                      <div class="mt-3">
+                        <h5 class="primary-color">
+                          Date and Time of Trip
+                        </h5>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="datetimepicker" placeholder="Choose Date">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 filters pl-4">
+                    <h5 class="primary-color">
+                      Other Choices
+                    </h5>
+                    <ul class="px-3 collapse show" id="other-collapse">
+                      <li class="mb-4">
+                        <p style="margin-bottom: 7px;">
+                          <label for="amount">Duration:</label>
+                          <input type="text" id="days" class="font-weight-bold primary-color" readonly style="border:0;">
+                        </p>
+                        <div id="duration-range"></div>
+                      </li>
+                      <li class="mb-4">
+                        <p style="margin-bottom: 7px;">
+                          <label for="amount">Price:</label>
+                          <input type="text" id="amount" class="font-weight-bold primary-color" readonly style="border:0;">
+                        </p>
+                        <div id="price-range"></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-12 mt-2">
+                    <button class="btn btn-primary btn-block"><i class="fa fa-filter"></i> Filter</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 page-content mt-3 py-3" style="max-height:420px;">
+          <div class="row">
+            <h5 class="mx-auto font-weight-bold primary-color">Top Rated Trips</h5>
+            <div class="col-sm-12 mt-3">
+              <img src="https://via.placeholder.com/90x90" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail mr-3">
+              <h5 class="font-weight-bold mb-0">
+                Trip Title
+              </h5>
+              <h6><em>By <a href="#">John Doe</a></em></h6>
+              <a class="btn btn-primary btn-sm" href="#">MORE DETAILS</a>
+            </div>
+            <div class="col-sm-12 mt-3">
+              <img src="https://via.placeholder.com/90x90" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail mr-3">
+              <h5 class="font-weight-bold mb-0">
+                Trip Title
+              </h5>
+              <h6><em>By <a href="#">John Doe</a></em></h6>
+              <a class="btn btn-primary btn-sm" href="#">MORE DETAILS</a>
+            </div>
+            <div class="col-sm-12 mt-3">
+              <img src="https://via.placeholder.com/90x90" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail mr-3">
+              <h5 class="font-weight-bold mb-0">
+                Trip Title
+              </h5>
+              <h6><em>By <a href="#">John Doe</a></em></h6>
+              <a class="btn btn-primary btn-sm" href="#">MORE DETAILS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-card col-md mt-3 pr-0">
+          <!-- Card -->
+          <div class="row trip-card page-content pt-3 pb-1 mb-3" style="border: none;">
+            <div class="col-md-3">
+              <img class="w-100" src="https://via.placeholder.com/450x450">
+            </div>
+            <div class="col-md">
+              <h3 class="card-title mb-0">
+                <a href="#" class="primary-color">Trip Title</a>
+              </h3>
+              <span>by <a href="#">John Doe</a></span>
+              <div class="row" style="min-height: 120px;">
+                <div class="col" style="border-right: 1px solid #eee">
+                  <h2 class="h1 mt-2" style="font-weight: 600;">
+                    $200
+                  </h2>
+                  <span class="primary-color d-block" style="font-size:0.7493rem !important;">
+                    <i class="fa fa-calendar"></i> Starts: <span class="font-weight-bold">Nov 4th, 2017 | 07:00AM</span>
+                  </span>
+                  <span class="primary-color d-block" style="font-size:0.7493rem !important;">
+                    <i class="fa fa-clock-o"></i> Duration: <span class="font-weight-bold">4 Days</span>
+                  </span>
+                </div>
+                <div class="col col-md-3" style="border-right: 1px solid #eee">
+                  <h5 class="text-center font-weight-bold">Attractions</h5>
+                  <ul class="pl-1 mb-0" style="list-style: none;">
+                    <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Luxor</a></li>
+                    <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Aswan</a></li>
+                    <li><i class="fa fa-map-marker primary-color"></i> <a href="#">Edfu</a></li>
+                  </ul>
+                  <a href="#"> <i class="fa fa-angle-double-right"></i> See more</a>
+                </div>
+                <div class="col">
+                  <div class="stars" style="width:inherit;">
+                    <span><i class="fa fa-star" style="color: gold;"></i></span>
+                    <span>4.2 (<a href="#">33 Reviews</a>)</span>
+                  </div>
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <a href="#" class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-angle-double-down"></i>
+                            Includes
+                          </a>
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in show">
+                        <div class="panel-body">
+                          <ul class="pl-1 mb-0" style="list-style: none;">
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <a href="#" class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fa fa-angle-double-right"></i>
+                            Excludes
+                          </a>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <ul class="pl-1 mb-0" style="list-style: none;">
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col">
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                    <a href="#" class="btn btn-success btn-sm"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Attractions Card -->
+          <div class="row attractions-card page-content pt-3 pb-1 mb-3" style="border: none;">
+            <div class="col-md-3">
+              <img class="w-100" src="https://via.placeholder.com/450x450">
+            </div>
+            <div class="col-md">
+              <h3 class="card-title mb-0">
+                <a href="#" class="primary-color">Attraction Name</a>
+              </h3>
+              <div class="row" style="min-height: 120px;">
+                <div class="col-8" style="border-right: 1px solid #eee">
+                  <span class="primary-color d-block"><i class="fa fa-map-o"></i> Country: <span class="primary-color font-weight-bold">Egypt</span></span>
+                  <span class="primary-color d-block"><i class="fa fa-money"></i> Adult Ticket: <span class="primary-color font-weight-bold"><i
+                        class="fa fa-usd"></i>200</span>
+                  </span>
+                  <span class="primary-color d-block"><i class="fa fa-money"></i> Child Ticket: <span class="primary-color font-weight-bold"><i
+                    class="fa fa-usd"></i>200</span>
+                  </span>
+                  <span class="primary-color d-block"><i class="fa fa-clock-o"></i> Openning: <span class="primary-color font-weight-bold">Everyday
+                      10:00AM except Fridays</span></span>
+                </div>
+                <div class="col">
+                  <div class="stars" style="width:inherit;">
+                    <span><i class="fa fa-star" style="color: gold;"></i></span>
+                    <span>4.2 (<a href="#">33 Reviews</a>)</span>
+                  </div>
+                  <!-- <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <a href="#" class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-angle-double-down"></i>
+                            Includes
+                          </a>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse in show">
+                        <div class="panel-body">
+                          <ul class="pl-1 mb-0" style="list-style: none;">
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                            <li class="text-success"><i class="fa fa-check-square"></i> Item</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <a href="#" class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fa fa-angle-double-right"></i>
+                            Excludes
+                          </a>
+                        </a>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <ul class="pl-1 mb-0" style="list-style: none;">
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                            <li class="text-danger"><i class="fa fa-window-close"></i> Item</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col">
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-share"></i> Visit Page</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer primary-bg-color">
+    <div class="container">
+      <div class="row">
+        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <img class=" img-fluid my-3" src="../assets/img/logo3.png" alt="card image" width="200">
+          <!--headin5_amrc-->
+          <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s</p>
+          <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+          <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+          <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+        </div>
+
+
+
+
+
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+
+
+        <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+          <!--headin5_amrc ends here-->
+          <div class="row mx-1">
+            <form>
+              <p style="font-size: .85em">Subscribe to our newsletter</p>
+              <div class="form-row">
+                <div class="form-group col-md-10">
+                  <input id="subscribeInput" type="email" class="form-control" placeholder="Email Address">
+                </div>
+
+                <div class="form-group col-md-2 search-btn">
+                  <button id="subscribeBtn" class="btn btn-primary form-control"><i class="fa fa-envelope"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="social_links px-0">
+            <li class="px-0"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center mt-4">&copy; 2019 <a href="#">Tukshare</a> | All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+  <!-- Trip Modal -->
+  <div class="modal fade bd-trip-info-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalCenterTitle">TRIP TITLE #1</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <img class="w-100" src="https://via.placeholder.com/350x250" height="250">
+              </div>
+              <div class="col-md-7">
+                <span class="profit d-block">
+                  <span class="primary-color"><i class="fa fa-money"></i> Trip Price:</span>
+                  <span class="text-success"><i class="fa fa-usd"></i>25</span>
+                </span>
+                <span class="profit d-block">
+                  <span class="primary-color"><i class="fa fa-star"></i> Trip Rating:</span>
+                  <span class="text-success">4.7</span>
+                </span>
+                <span class="tourists-num d-block">
+                  <span class="primary-color"><i class="fa fa-clock-o"></i> Trip Duration:</span>
+                  <span class="text-success">4 days</span>
+                </span>
+                <span class="tourists-num d-block">
+                  <span class="primary-color"><i class="fa fa-calendar-o"></i> Start/End Date:</span>
+                  <span class="text-success">25-11-2018 / 28-12-2018</span>
+                </span>
+                <h3 class="mt-2 font-weight-bold primary-color">Description </h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trip Modal -->
+  <!-- Add to Cart modal -->
+  <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCartModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Purchase Trip#1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h5>Pickup Date: </h5>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar-o"></i></span>
+              </div>
+              <input type="date" class="form-control pickup-date" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <h5 class="d-block">Pickup Time: </h5>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <input type="time" class="form-control pickup-time" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+  <script>
+    $(function () {
+      $('#datepicker').datetimepicker({
+        format: "DD/MM/YYYY"
+      });
+    });
+
+    $(function () {
+      $('#datetimepicker').datetimepicker();
+    });
+
+    $(function () {
+      $("#duration-range").slider({
+        range: true,
+        min: 0,
+        max: 30,
+        values: [7, 22],
+        slide: function (event, ui) {
+          $("#days").val(ui.values[0] + " Days" + " - " + ui.values[1] + " Days");
+        }
+      });
+      $("#days").val(+$("#duration-range").slider("values", 0) + " Days" +
+        " - " + $("#duration-range").slider("values", 1) + " Days");
+    });
+    $(function () {
+      $("#price-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function (event, ui) {
+          $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+      });
+      $("#amount").val("$" + $("#price-range").slider("values", 0) +
+        " - $" + $("#price-range").slider("values", 1));
+    });
+  </script>
+</body>
+
+</html>
