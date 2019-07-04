@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
 
   <!-- Video player CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css" />
+  
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img class=" img-fluid" src="assets/img/tourshare-logo.png" alt="card image" width="165" />
+        <img class=" img-fluid" src="assets/img/tourshare-logo.png" alt="card image" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,21 +62,23 @@
                 <i class="fas fa-search"></i>
                 <input class="ml-2" type="text" placeholder="Explore more trips....">
                   <!-- Search details -->
-                <div class="nav_search-box-details">
+                  <div class="nav_search-box-details">
                     <select name="Choose City" class="search-city"> 
                       <option disabled selected>Choose City</option > 
                       <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
+                      <option value="Value 2">Value 2</option> 
+                      <option value="Value 3">Value 3</option> 
+                      <option value="Value 4">Value 4</option> 
                     </select> 
                     <select class="search-location"> 
                       <option disabled selected>Pick up location</option> 
                       <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
+                      <option value="Value 2">Value 2</option> 
                     </select> 
                     <select class="search-date"> 
                       <option disabled selected>Trip date</option> 
                       <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
+                      <option value="Value 2">Value 2</option> 
                     </select>
                     <button class="btn btn-primary">Search</button>
                   </div>
@@ -783,25 +785,25 @@ $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
 
 
 
-    $(function () {
-      $('#datepicker').datetimepicker({
-        format: "DD/MM/YYYY"
-      });
-    });
+    // $(function () {
+    //   $('#datepicker').datetimepicker({
+    //     format: "DD/MM/YYYY"
+    //   });
+    // });
 
-    var myDate = document.getElementById("myDate");
-    var today = new Date();
-    myDate.value = today.toISOString().substr(0, 10);
+    // var myDate = document.getElementById("myDate");
+    // var today = new Date();
+    // myDate.value = today.toISOString().substr(0, 10);
 
     // Change the second argument to your options:
-    var player = new Plyr("video", {
-      captions: {
-        active: true
-      }
-    });
+    // var player = new Plyr("video", {
+    //   captions: {
+    //     active: true
+    //   }
+    // });
 
     // Expose player so it can be used from the console
-    window.player = player;
+    // window.player = player;
 
 
     

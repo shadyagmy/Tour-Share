@@ -6,29 +6,42 @@ var blurTime;
 
 // Show navbar navbar box details on large screens
 function navBarSelectDetailsShow() {
-  if ($(window).width() > 991) {
-    $('.nav_search-box-details').slideDown("fast");
-    $('.nav_search-box-details').css("display", "flex")
-    clearInterval(blurTime)
-  } 
+  $('.nav_search-box-details').slideDown(400);
+  $('.nav_search-box-details').css("display", "flex");
+  clearInterval(blurTime);
+
+  if ($(window).width() <= 991) {
+    $('.nav_search-box-city').css('marginBottom', 90  );
+  }  
 }
 
 // Hide navbar navbar box details 
 function navBarSelectDetailsHide() {
-  if ($(window).width() > 991) {
-    blurTime = setTimeout(function() {
-    $('.nav_search-box-details').slideUp("fast");
-    }, 1000);
+  blurTime = setTimeout(function() {
+    $('.nav_search-box-details').slideUp(300)
+  }, 100);
+
+  if ($(window).width() <= 991) {
+    $('.nav_search-box-city').css('marginBottom', 25 );
   }
 }
 
-// On hover on (nabvar search box city input) show the selects box details 
-$('.nav_search-box-city').on("mouseover", function() {
+// On hover 
+$('.nav_search-box-city, .nav_search-box-details').on("mouseover  mouseenter", function() {
   navBarSelectDetailsShow()
-// when mouseOut (nabvar search box city input) show the selects box details 
+
+  // if ( $('.nav_search-box-details').css('display') == 'none') { }
+ 
+// when mouseOut 
 }).on("mouseleave", function(){
   navBarSelectDetailsHide()
+
+  // if ( $('.nav_search-box-details').css('display') == 'flex') {}
 });
+
+$('.nav_search-box-city input').on("keydown keypress", function() {
+  navBarSelectDetailsShow()})
+
 
 
 
