@@ -296,8 +296,10 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 }
 
 @media all and (max-width: 540px) {
+    #navs_container {
+        padding: 10px 10px 5px 0px;
 
-    
+    }
 
     .navbar-brand .img-fluid {
         width: 150px;
@@ -308,8 +310,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
     }
 
     .left_nav .nav_search-box {
-        width: 90%;
-        
+        width: 90%;    
     }
 
     .nav_search-box-details select, .nav_search-box-details .btn {
@@ -326,7 +327,15 @@ h1,h2,h3,h4,h5,h6,p,a,button {
     }
 }
 
+@media all and (max-width: 420px) {
 
+    .navbar-nav.left_nav {
+        width: 100%;
+    }
+    .left_nav .nav_search-box {
+        width: 100%;    
+    }
+}
 
 
 /* < - ` - >  HEADER SECTION  < - ` - > 
