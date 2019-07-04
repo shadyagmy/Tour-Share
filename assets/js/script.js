@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
 
 // Navbar search box slide toggle
+//////////////////////////////////
+
 var blurTime;
 
 // Show navbar navbar box details on large screens
@@ -9,7 +11,6 @@ function navBarSelectDetailsShow() {
   $('.nav_search-box-details').slideDown(400);
   $('.nav_search-box-details').css("display", "flex");
   clearInterval(blurTime);
-
 }
 
 // Hide navbar navbar box details 
@@ -28,14 +29,10 @@ function navBarSelectDetailsHide() {
 // On hover 
 $('.nav_search-box-city, .nav_search-box-details').on("mouseover  mouseenter", function() {
   navBarSelectDetailsShow()
-
-  // if ( $('.nav_search-box-details').css('display') == 'none') { }
- 
 // when mouseOut 
 }).on("mouseleave", function(){
   navBarSelectDetailsHide()
 
-  // if ( $('.nav_search-box-details').css('display') == 'flex') {}
 });
 
 $('.nav_search-box-city input').on("keydown keypress", function() {
