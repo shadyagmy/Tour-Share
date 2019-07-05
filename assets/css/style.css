@@ -5,7 +5,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     overflow-x: hidden;
-    color: #2f3133;
+    color: #111;
     box-sizing: border-box;
     
     
@@ -49,16 +49,10 @@ h1,h2,h3,h4,h5,h6,p,a,button {
    width: 100%;
 }
 
-.navbar-icon-top .navbar-nav {
-    align-items: center;
-    
-}
-
 .navbar-nav.left_nav {
     max-height: 30px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 .nav_search-box-details {
@@ -110,7 +104,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
 
 
 .nav_search-box-details select  {
-    color : #444;
+    color: #222;
     font-size: .75rem;
     border: 1px solid #aaa;
     padding: 2px 3px;
@@ -253,7 +247,7 @@ h1,h2,h3,h4,h5,h6,p,a,button {
         padding: 10px 10px;
         border: 1px solid #e6ecf3;
         border-radius: 1px;
-        min-height: 225px;
+        min-height: 160px;
     }
 
     .navbar-icon-top .right_nav {
@@ -503,7 +497,7 @@ header.header .row {
     margin-left: 5px;
     margin-top: 3px;
     font-weight: bold;
-    color: #45484c;
+    color: #222;
     font-size: 13px;
     width: 152px;
     border: 1px solid #ccc;
@@ -521,12 +515,12 @@ header.header .row {
 
 .owl-tours-tour {
    border-radius: 3px;
-   height: 22vw; 
+  
 }
 
 .owl-tours-tour .tour_show {
     width: 100%;
-    height: 62%;
+    height: 33vh;
     background-image: linear-gradient( to top, rgba(30, 30, 30, 0.35), rgba(30, 30, 30, 0.5)), url(../img/tour_1.jpg);
     background-size: 100% 100%;
     position: relative;
@@ -539,7 +533,7 @@ header.header .row {
 
 .tour_show-details {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     left: 0;
     width: auto;
    
@@ -682,29 +676,40 @@ header.header .row {
  /* Media queries for owl carosal sliders */
 
  @media all and (max-width: 1100px) {
-    .owl-tours-tour {
-        height: 24vw;
-    }
+    /* .owl-tours-tour {
+        height: 33vw;
+    } */
  }
 
  @media all and (max-width: 900px) {
+     
     .owl_slider_heading {
         align-items: flex-start;
-          flex-direction: column;
-          margin-bottom: 10px;
-      }
-      .owl_slider_heading p {
-          padding-left: 0px;
-      }
-  
-      .last-m-t-form select {
-          margin-left: 0px;
-          margin-top: 1px;
-      }
-
-      .owl-tours-tour {
-        height: 35vw;
+        flex-direction: column;
+        margin-bottom: 0px;
     }
+
+    .owl_slider_heading_head {
+        margin-bottom: 8px;
+    }
+
+    .owl-carousel {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .owl_slider_heading p {
+        padding-left: 0px;
+    }
+  
+    .last-m-t-form select {
+        margin-left: 0px;
+        margin-top: 1px;
+    }
+
+    .owl-tours-tour .tour_show {
+        height: 30vh;
+    } 
 
  }
 
@@ -715,34 +720,19 @@ header.header .row {
     }
     
     .owl-tours-tour .tour_show {
-        height: 75%;
-    }
-
-    .owl-tours-tour {
-        height: 50vw;
-    }
-
+        height: 31vh;
+    } 
  }
+
  
  @media all and (max-width: 500px) {
     .owl-tours-tour .tour_show {
-        height: 60%;
+        height: 45vw;
     }
-
-    .owl-tours-tour {
-        height: 70vw;
-    }
+ 
  }
 
- @media (max-width: 350px){
-    tours-tour {
-        height: 73vw;
-    }
 
-    .owl-tours-tour .tour_show {
-        height: 63%;
-    }
-}
 
 
 /* TOP RATED tours section 
@@ -790,8 +780,7 @@ header.header .row {
 /* GO LIVE SECTION 
 ==============================*/
 .go_live {
-    background-image: linear-gradient( to right bottom, rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.1)),
-    url(../img/go_live_banner.png);
+    background-image: linear-gradient( to bottom, rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.2)), url(../img/go_live_banner.png);
     background-size: 100% 100%;
     padding: 45px;
     overflow: hidden;
@@ -814,8 +803,8 @@ header.header .row {
 .go_live-para {
     font-family: 'Caveat', cursive;
     color: #E3F06D;
-    font-size: 23px;
-    width: 70%;
+    font-size: 33px;
+   
 }
 
 .go_live-para button {
@@ -854,14 +843,15 @@ header.header .row {
 
 @media all and (max-width: 900px) {
     .go_live-content {
-        width: 80%;  
+        width: 90%;  
     }
 
     .go_live-para button {
         margin-left: 5px;
-        font-size: 14px;
-        padding: 7px 14px;
-        margin-top: 4px;   
+        font-size: 15px;
+        padding: 8px 16px;
+        margin-top: 4px;
+        border: 1px solid #eee;
     }
 }
 
@@ -934,7 +924,8 @@ header.header .row {
 
 .tour_guide-name-and-rate {
     font-size: 14px;
-    font-weight: bold
+    font-weight: bold;
+    color: #000;
 
 }
 
@@ -976,15 +967,11 @@ header.header .row {
 
 @media (max-width: 600px) {
     .top_rated_attractions .owl-tours-tour {
-        height: 45vw;
+        height: 60vw;
     }
 }
 
     
-
-
-
-
 /* OWL CAROUSAL NaV AND  BUTTONS Style 
 ============================== */
 .owl-stage-outer {
