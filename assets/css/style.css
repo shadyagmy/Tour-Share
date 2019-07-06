@@ -1231,6 +1231,30 @@ header.header .row {
     .attractions_head .col-lg-7 {
         margin-bottom: 15px;
     }
+    .attractions_head  .row > div {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 2px;
+    }
+    .attractions_head  .row .attraction_info {
+        padding: 15px 10px;
+    }
+
+    .attractions_head  .row .attraction_info .attraction_title {
+        flex-wrap: wrap;
+    }
+
+    .attractions_head  .row .attraction_info .attraction_title h4 {
+        padding: 3px 9px 4px 0;
+    }
+
+    .attraction_info .attraction_name_and_rate {
+        flex-wrap: wrap;
+    }
+
+    .attraction_extra_info h6 {
+        padding-bottom: 10px;
+    }
 }
 
 
@@ -2557,71 +2581,6 @@ label.star:before {
 /***************************************************************************************/
 
 
-/*Attractions Page*/
-
-.gallery {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.tz-gallery {
-    padding: 40px;
-}
-
-
-/* Override bootstrap column paddings */
-
-.tz-gallery .row>div {
-    padding: 2px;
-}
-
-.tz-gallery .lightbox img {
-    width: 100%;
-    border-radius: 0;
-    position: relative;
-}
-
-.tz-gallery .lightbox:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
-    opacity: 0;
-    color: #fff;
-    font-size: 26px;
-    /* font-family: 'Glyphicons Halflings';
-    content: '\e003'; */
-    font-family: FontAwesome;
-    content: "\f002";
-    pointer-events: none;
-    z-index: 9000;
-    transition: 0.4s;
-}
-
-.tz-gallery .lightbox:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(46, 132, 206, 0.7);
-    content: "";
-    transition: 0.4s;
-}
-
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
-    opacity: 1;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
 
 
 /*Attractions Page*/

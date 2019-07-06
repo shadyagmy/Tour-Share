@@ -565,7 +565,6 @@ $('.owl-carousel.top-rated-tours-slider').owlCarousel({
     loop: true,
     mouseDrag : true,
     touchDrag : true,
-
     autoplay: true,
     autoplayTimeout:7500,
     autoplaySpeed : 1200,
@@ -605,12 +604,12 @@ $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
     autoplaySpeed : 1200,
     autoplayHoverPause:true,
     navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
-    mouseDrag : true,
+    mouseDrag : false,
     touchDrag : true,
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true           
         },
         600:{
             items:2,
