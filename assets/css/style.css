@@ -14,12 +14,17 @@ body {
 h1,h2,h3,h4,h5,h6,p,a,button {
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
 }
 
 .btn {
     margin-bottom: 0;
     font-size: .9rem;
     outline: none!important;
+}
+
+a,button {
+    cursor: pointer!important;
 }
 
 /* BOOTSTRAP Container RESET */
@@ -533,7 +538,7 @@ header.header .row {
 
 .tour_show-details {
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
     left: 0;
     width: auto;
    
@@ -729,7 +734,10 @@ header.header .row {
     .owl-tours-tour .tour_show {
         height: 45vw;
     }
- 
+    .tour_show_details-form {
+       top: -76%;
+    }
+
  }
 
 
@@ -926,7 +934,6 @@ header.header .row {
     font-size: 14px;
     font-weight: bold;
     color: #000;
-
 }
 
 .tour_guide_info-desc {
@@ -960,15 +967,61 @@ header.header .row {
     padding-top: 2px;
 }
 
-.top_rated_attractions-slider .tour_show {
-    background-image: linear-gradient( to top, rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.3)), url(../img/attraction.jpg);
+.top_rated_attractions-slider .owl-tours-tour {
+    position: relative;   
     
 } 
 
-@media (max-width: 600px) {
-    .top_rated_attractions .owl-tours-tour {
-        height: 60vw;
+
+.top_rated_attractions-slider .owl-tours-tour .tour_show {
+    height: 30vh;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.top_rated_attractions-slider .owl-tours-tour .tour_show img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.top_rated_attractions-slider .owl-tours-tour .tour_show .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient( to bottom, rgba(30, 30, 30, 0.35), rgba(30, 30, 30, 0.15));
+}
+
+.top_rated_attractions-slider .owl-tours-tour .attraction_name {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    .top_rated_attractions-slider .owl-tours-tour .tour_show {
+        height: 25vh;
     }
+    
+}
+
+@media (max-width: 600px) {
+    .top_rated_attractions {
+        padding: 25px 0 0px;
+        margin: 15px 0 0px;
+    }
+
+    .top_rated_attractions-slider .owl-tours-tour .tour_show {
+        height: 30vh;
+    }
+    
 }
 
     
@@ -1014,7 +1067,7 @@ header.header .row {
     transform: rotate(-7deg);
 }
 
-}
+
 
 .owl-prev:focus,
 .owl-next:focus {
@@ -1172,17 +1225,24 @@ header.header .row {
     font-size: 12px;
 }
 
+/* MEDIA QUERIES FOr Attraction page head section*/
+
+@media all and (max-width: 992px) {
+    .attractions_head .col-lg-7 {
+        margin-bottom: 15px;
+    }
+}
+
+
 
 /* ATTRACTIONS REVIEWS 
 ====================================*/
 
 .attraction_reviews {
-    
+    padding: 20px 10px 20px 0;
 }
 
 .attraction_reviews-heading {
-    font-size: 18px;
-    text-transform: capitalize;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -1190,19 +1250,18 @@ header.header .row {
 .attraction_reviews_cont {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap; 
 }
 
 .attraction_review {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 10px;
+    flex-basis: 45%;
+    margin-bottom: 15px;
 }
 
 .attraction_review_avatar {
-    flex-basis: 45%;
+    flex-basis: 100%;
 }
 
 .attraction_review_avatar img {
@@ -1211,13 +1270,55 @@ header.header .row {
 
 .tour_guide-name-and-rate .date {
     font-weight: normal;
+    font-size: 12px
+}
+
+.tour_guide-name-and-rate .text-primary {
+    font-size: 13px;
 }
 
 .attraction_review .tour_guide_info-desc {
     font-size: 12px;
     font-weight: normal;
-    width: 80%;
-    
+    width: 95%;   
+}
+
+@media all and (max-width: 992px) {
+    .attraction_review {
+        flex-basis: 50%;
+        margin: 15px auto 0;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .attraction_review {
+        flex-basis: 70%;
+    }
+
+    .attraction_review .tour_guide_info-desc {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .attraction_review {
+        flex-basis: 100%;
+        padding: 10px 0px 15px 0;
+        margin: 0px auto 0;
+        margin-bottom: 0;
+    }
+
+    .attraction_review_avatar {
+        margin-right: 5px;
+    }
+
+}
+
+.owl-carousel > div {
+    cursor: pointer;
 }
 
 /*  ATTRACTION TOURS 
@@ -1228,10 +1329,129 @@ header.header .row {
 }
 
 .top-rated-tours.attraction-tours .top-rated-tours-slider .owl-tours-tour .tour_show {
-    background-image: linear-gradient( to top, rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.4)),
-    url(../img/tour_2.jpg);
+    background-image: linear-gradient( to top, rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.4));
+    position: relative;
+    z-index: 2;
 }
 
+.top-rated-tours.attraction-tours .top-rated-tours-slider .owl-tours-tour .tour_show img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.top-rated-tours.attraction-tours .top-rated-tours-slider .owl-tours-tour .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient( to bottom, rgba(30, 30, 30, 0.45), rgba(30, 30, 30, 0.2));
+}
+
+.attr-page .attraction_tours_section .tour_show_details-heading  {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.attr-page .attraction_tours_section .tour_show_details-heading > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.attr-page .attraction_tours_section .tour_show_details-heading h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.attr-page .attraction_tours_section .tour_show_details-heading > div .tour-guide-name {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.attr-page .attraction_tours_section .tour_show_details-heading .tour_tour-guide {
+    font-size: .9rem;
+}
+
+.attractions_tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    align-items: center;
+}
+
+.attractions_tags a {
+    color: inherit;
+    text-decoration: underline;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.attr-page .attraction_tours_section .owl-nav {
+    top: 38%;
+    left: -16%;
+    width: 15%;
+    transform: rotate(92deg);
+}
+
+.attr-page .attraction_tours_section .owl-nav .owl-prev,
+.attr-page .attraction_tours_section .owl-nav .owl-next{
+    transform: rotateX(180deg);
+    cursor: pointer;
+
+}
+
+.attr-page .attraction_tours_section .owl-nav .owl-prev img,
+.attr-page .attraction_tours_section .owl-nav .owl-next img {
+    width: 32px;
+}
+
+
+
+.owl-carousel .animated {
+    animation-duration: 2s!important;
+    -webkit-animation-duration :  2s!important;
+    -webkit-animation-fill-mode : both  ;
+    animation-fill-mode: both;
+}
+
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {
+  z-index : 1 
+   }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {
+  z-index : 0;
+   }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
  
 
 

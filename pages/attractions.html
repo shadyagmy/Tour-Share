@@ -19,9 +19,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/lightbox.min.css">
+
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/animate.css" />
+
+
   <!-- Font Awesome CDN LINK -->
   <script src="https://kit.fontawesome.com/440efbbfd3.js"></script>
 
@@ -29,64 +36,73 @@
 
 <body>
 
-  <!-- NAVBAR  
+<!-- NAVBAR  
   =============================================-->
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class=" img-fluid" src="../assets/img/tourshare-logo.png" alt="card image" width="165" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div id="navs_container">
-          <ul class="navbar-nav left_nav">
-              <li class="form-control nav_search-box nav_search-box-city">
-                <i class="fas fa-search"></i>
-                <input class="ml-2" type="text" placeholder="Explore more trips....">
-                  <!-- Search details -->
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class=" img-fluid" src="../assets/img/tourshare-logo.png" alt="card image" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div id="navs_container">
+            <ul class="navbar-nav left_nav">
+                <li class="form-control nav_search-box nav_search-box-city">
+                  <i class="fas fa-search"></i>
+                  <input class="ml-2" type="text" placeholder="Explore more trips....">
+                </li>
+  
+                <!-- Search details -->
                 <div class="nav_search-box-details">
-                    <select name="Choose City" class="search-city"> 
-                      <option disabled selected>Choose City</option > 
-                      <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
-                    </select> 
-                    <select class="search-location"> 
-                      <option disabled selected>Pick up location</option> 
-                      <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
-                    </select> 
-                    <select class="search-date"> 
-                      <option disabled selected>Trip date</option> 
-                      <option value="Value 1">Value 1</option> 
-                      <option value="Value 1">Value 2</option> 
-                    </select>
-                    <button class="btn btn-primary">Search</button>
-                  </div>
+                  <select name="Choose City" class="search-city"> 
+                    <option disabled selected>Choose City</option > 
+                    <option value="Value 1">Value 1</option> 
+                    <option value="Value 2">Value 2</option> 
+                    <option value="Value 3">Value 3</option> 
+                    <option value="Value 4">Value 4</option> 
+                  </select> 
+                  <select class="search-location"> 
+                    <option disabled selected>Pick up location</option> 
+                    <option value="Value 1">Value 1</option> 
+                    <option value="Value 2">Value 2</option> 
+                  </select> 
+                  <select class="search-date"> 
+                    <option disabled selected>Trip date</option> 
+                    <option value="Value 1">Value 1</option> 
+                    <option value="Value 2">Value 2</option> 
+                  </select>
+                  <button class="btn btn-primary">Search</button>
+                </div>
+  
+                <li class="form-control nav_search-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input class="ml-2" type="text" placeholder="Go live and meet new travelers mates....">
+                </li>
+            </ul>
+  
+            <ul class="navbar-nav right_nav">
+              <li class="nav-item">
+                <a href="##">
+                    <img src="../assets/img/tour_guide_avatar.jpg" alt="Profile Avatar">
+                </a>
               </li>
-
-              <li class="form-control nav_search-box">
-                <i class="fas fa-map-marker-alt"></i>
-                <input class="ml-2" type="text" placeholder="Go live and meet new travelers mates....">
+              <li class="nav-item">
+                <a href="##">
+                    <img src="../assets/img/shopping_cart.png" alt="Shopping cart">
+                </a>
+               
               </li>
-          </ul>
-
-          <ul class="navbar-nav right_nav">
-            <li class="nav-item">
-              <i class="fas fa-user"></i>
-            </li>
-            <li class="nav-item">
-              <i class="fas fa-shopping-cart"></i>
-            </li>
-          </ul>
-
+            </ul>
+  
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+
 
   <!-- HEAD 
   ============================================-->
@@ -94,7 +110,7 @@
     <div class="attractions_head">
       <div class="row">
 
-      <div class="col-sm-7">
+      <div class="col-lg-7 col-md-9 col-sm-12 mx-auto">
         <div class="gallery">
             <div class="grid_item-1">
               <a href="../assets/img/AttractionPage/temple_1.jpg" data-lightbox="attracion gallery" data-title="image 1">
@@ -128,10 +144,10 @@
         
       </div>
 
-      <div class="attraction_info col-sm-5">
+      <div class="attraction_info col-lg-5 col-md-8 col-sm-10 mx-auto">
         <div class="attraction_title d-flex justify-content-between align-items-center">
           <div class="attraction_name_and_rate ">
-            <h4>Karnak Temple</h4> 
+            <h4 >Karnak Temple</h4> 
             <span class="attraction_rate"><i class="fas fa-star"></i>&nbsp;4.5</span>
             <span class="text-danger">(250 reviews)</span>
           </div>
@@ -168,17 +184,18 @@
     </div>
   </div>
 
+
   <!-- Attraction Reviews 
   ============================================-->
   <div class="container">
-    <div class="row">
-      <div class="col-sm-7">
+    <div class="row  attr-page">
+      <div class="attraction_reviews_section col-lg-7 col-sm-12 mx-auto">
         <section class="attraction_reviews">
-            <h4 class="attraction_reviews-heading">Attraction Reviews</h4>
+            <h4 class="attraction_reviews-heading ">Attraction Reviews</h4>
             <div class="attraction_reviews_cont">
 
                 <div class="attraction_review">
-                    <div class="attraction_review_avatar pr-3">
+                    <div class="attraction_review_avatar pr-2">
                       <img src="../assets/img/tour_guide_avatar.jpg" alt="Tour Guide Photo">
                     </div>
                     <div class="tour_guide_info">
@@ -188,7 +205,7 @@
                         </h5>
                       </div>
                       <p class="tour_guide_info-desc">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link p-0">Check more</button> 
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link pl-1 pt-0">Check more</button> 
                       </p>
                     </div>                  
                 </div>
@@ -203,23 +220,7 @@
                         </h5>
                       </div>
                       <p class="tour_guide_info-desc">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link p-0">Check more</button> 
-                      </p>
-                    </div>                  
-                </div>
-
-                <div class="attraction_review">
-                    <div class="attraction_review_avatar pr-3">
-                      <img src="../assets/img/tour_guide_avatar.jpg" alt="Tour Guide Photo">
-                    </div>
-                    <div class="tour_guide_info">
-                      <div class="tour_guide_info-basics">
-                        <h5 class="tour_guide-name-and-rate pb-1">
-                          Taher Shawqy&nbsp; <span class="date">5th jun</span> <span class="text-primary"><i class="fas fa-star"></i>4.5</span>
-                        </h5>
-                      </div>
-                      <p class="tour_guide_info-desc">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link p-0">Check more</button> 
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link pl-1 pt-0">Check more</button> 
                       </p>
                     </div>                  
                 </div>
@@ -235,7 +236,23 @@
                         </h5>
                       </div>
                       <p class="tour_guide_info-desc">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link p-0">Check more</button> 
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link pl-1 pt-0">Check more</button> 
+                      </p>
+                    </div>                  
+                </div>
+
+                <div class="attraction_review">
+                    <div class="attraction_review_avatar pr-3">
+                      <img src="../assets/img/tour_guide_avatar.jpg" alt="Tour Guide Photo">
+                    </div>
+                    <div class="tour_guide_info">
+                      <div class="tour_guide_info-basics">
+                        <h5 class="tour_guide-name-and-rate pb-1">
+                          Taher Shawqy&nbsp; <span class="date">5th jun</span> <span class="text-primary"><i class="fas fa-star"></i>4.5</span>
+                        </h5>
+                      </div>
+                      <p class="tour_guide_info-desc">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <button class="btn btn-link pl-1 pt-0">Check more</button> 
                       </p>
                     </div>                  
                 </div>  
@@ -243,7 +260,7 @@
         </section>
       </div>
 
-      <div class="col-sm-5">
+      <div class="attraction_tours_section col-lg-5 col-sm-8 col-sm-10 mx-auto">
           <section class="top-rated-tours attraction-tours">
               <div class="owl_slider_heading">
                   <h4 class="font-weight-bold owl_slider_heading_head">Attraction Tours</h4>                 
@@ -251,160 +268,211 @@
               <div class="owl-carousel top-rated-tours-slider">
                   <div class="owl-tours-tour">
                       <div class="tour_show">
+                        <img src="../assets/img/attraction_tour.png" alt="Attraction image">
+                        <span class="overlay"></span>
                         <div class="tour_show-details">
-                            <h6 class="tour_show_details-heading">
-                              Luxor full day tour
-                              <span class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</span> 
-                             </h6>           
+                            <div class="tour_show_details-heading">
+                              <div class=" mb-1">
+                                  <h5>Luxor full day tour</h5>
+                                  <i class="fas fa-eye "></i>
+                              </div>
+                              <div>
+                                <p class="tour_tour-guide">Tour guide: 
+                                    <span class="text-bold">
+                                      <a href="#" class="tour-guide-name font-weight-bold">John Smith</a>
+                                    </span>
+                                  </p>
+                                  <span class="tour_show_details-heading-rating ml-1"><i class="fas fa-star"></i>&nbsp;4.5</span> 
+                              </div>
+                             
+                             </div>       
                         </div>
                         <form action="" class="tour_show_details-form">
-                            <div class="pretty p-default p-curve p-fill">
-                                <input type="checkbox" />
-                                <div class="state">
-                                    <label></label>
-                                </div>
+                            <div class="heart-shop-cart-cont">
+                              <label class="heart-shop-cart-label">
+                                <input class="shopping-cart-input" type="checkbox" />
+                                <i class="fas fa-shopping-cart"></i>
+                              </label>
                             </div>
                             <div class="heart-checkBox-cont">
                                 <label class="heart-checkBox-label">
-                                   <input class="heart-checkBox-input" type="checkbox" />
+                                    <input class="heart-checkBox-input" type="checkbox" />
                                     <i class="fas fa-heart"></i>              
                                 </label>    
                             </div>
                         </form>   
                       </div>
+
                       <div class="tour_info">
-                        <div class="trip_closing">
-                            <p class="tour_tour-guide">Tour guide: 
-                              <span class="text-bold">
-                                <a href="#" class="tour-guide-name">John Smith</a>
-                              </span>
-                            </p>
-                            <p class="text-danger tour_seats">only 4 seats left!!</p>
+                        <div class="attractions_tags">
+                          <h5>Attractions:</h5>
+                          <a href="##">Karnak temple</a>-
+                          <a href="##">Luxor temple </a>-
+                          <a href="##">Valley of the kings</a>   
                         </div>
-                        <div class="trip_reviews text-danger">(250 reviews)</div>
+                      
                         <div class="trip_book">
                           <button class="btn btn-primary">Book Now</button>
                           <p class="seat_price text-danger">30$ PER SEAT</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="owl-tours-tour">
+                  </div>
+                  <div class="owl-tours-tour">
                       <div class="tour_show">
+                        <img src="../assets/img/tour_2.jpg" alt="Attraction image">
+                        <span class="overlay"></span>
                         <div class="tour_show-details">
-                            <h6 class="tour_show_details-heading">
-                              Luxor full day tour
-                              <span class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</span> 
-                             </h6>           
+                            <div class="tour_show_details-heading">
+                              <div class=" mb-1">
+                                  <h5>Luxor full day tour</h5>
+                                  <i class="fas fa-eye "></i>
+                              </div>
+                              <div>
+                                <p class="tour_tour-guide">Tour guide: 
+                                    <span class="text-bold">
+                                      <a href="#" class="tour-guide-name font-weight-bold">John Smith</a>
+                                    </span>
+                                  </p>
+                                  <span class="tour_show_details-heading-rating ml-1"><i class="fas fa-star"></i>&nbsp;4.5</span> 
+                              </div>
+                             
+                             </div>       
                         </div>
                         <form action="" class="tour_show_details-form">
-                            <div class="pretty p-default p-curve p-fill">
-                                <input type="checkbox" />
-                                <div class="state">
-                                    <label></label>
-                                </div>
+                            <div class="heart-shop-cart-cont">
+                              <label class="heart-shop-cart-label">
+                                <input class="shopping-cart-input" type="checkbox" />
+                                <i class="fas fa-shopping-cart"></i>
+                              </label>
                             </div>
                             <div class="heart-checkBox-cont">
                                 <label class="heart-checkBox-label">
-                                   <input class="heart-checkBox-input" type="checkbox" />
+                                    <input class="heart-checkBox-input" type="checkbox" />
                                     <i class="fas fa-heart"></i>              
                                 </label>    
                             </div>
                         </form>   
                       </div>
+
                       <div class="tour_info">
-                        <div class="trip_closing">
-                            <p class="tour_tour-guide">Tour guide: 
-                              <span class="text-bold">
-                                <a href="#" class="tour-guide-name">John Smith</a>
-                              </span>
-                            </p>
-                            <p class="text-danger tour_seats">only 4 seats left!!</p>
+                        <div class="attractions_tags">
+                          <h5>Attractions:</h5>
+                          <a href="##">Karnak temple</a>-
+                          <a href="##">Luxor temple </a>-
+                          <a href="##">Valley of the kings</a>   
                         </div>
-                        <div class="trip_reviews text-danger">(250 reviews)</div>
+                      
                         <div class="trip_book">
                           <button class="btn btn-primary">Book Now</button>
                           <p class="seat_price text-danger">30$ PER SEAT</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="owl-tours-tour">
+                  </div>
+
+                  <div class="owl-tours-tour">
                       <div class="tour_show">
+                        <img src="../assets/img/tour_1.jpg" alt="Attraction image">
+                        <span class="overlay"></span>
                         <div class="tour_show-details">
-                            <h6 class="tour_show_details-heading">
-                              Luxor full day tour
-                              <span class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</span> 
-                             </h6>           
+                            <div class="tour_show_details-heading">
+                              <div class=" mb-1">
+                                  <h5>Luxor full day tour</h5>
+                                  <i class="fas fa-eye "></i>
+                              </div>
+                              <div>
+                                <p class="tour_tour-guide">Tour guide: 
+                                    <span class="text-bold">
+                                      <a href="#" class="tour-guide-name font-weight-bold">John Smith</a>
+                                    </span>
+                                  </p>
+                                  <span class="tour_show_details-heading-rating ml-1"><i class="fas fa-star"></i>&nbsp;4.5</span> 
+                              </div>
+                             
+                             </div>       
                         </div>
                         <form action="" class="tour_show_details-form">
-                            <div class="pretty p-default p-curve p-fill">
-                                <input type="checkbox" />
-                                <div class="state">
-                                    <label></label>
-                                </div>
+                            <div class="heart-shop-cart-cont">
+                              <label class="heart-shop-cart-label">
+                                <input class="shopping-cart-input" type="checkbox" />
+                                <i class="fas fa-shopping-cart"></i>
+                              </label>
                             </div>
                             <div class="heart-checkBox-cont">
                                 <label class="heart-checkBox-label">
-                                   <input class="heart-checkBox-input" type="checkbox" />
+                                    <input class="heart-checkBox-input" type="checkbox" />
                                     <i class="fas fa-heart"></i>              
                                 </label>    
                             </div>
                         </form>   
                       </div>
+
                       <div class="tour_info">
-                        <div class="trip_closing">
-                            <p class="tour_tour-guide">Tour guide: 
-                              <span class="text-bold">
-                                <a href="#" class="tour-guide-name">John Smith</a>
-                              </span>
-                            </p>
-                            <p class="text-danger tour_seats">only 4 seats left!!</p>
+                        <div class="attractions_tags">
+                          <h5>Attractions:</h5>
+                          <a href="##">Karnak temple</a>-
+                          <a href="##">Luxor temple </a>-
+                          <a href="##">Valley of the kings</a>   
                         </div>
-                        <div class="trip_reviews text-danger">(250 reviews)</div>
+                      
                         <div class="trip_book">
                           <button class="btn btn-primary">Book Now</button>
                           <p class="seat_price text-danger">30$ PER SEAT</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="owl-tours-tour">
+                  </div>
+
+                  <div class="owl-tours-tour">
                       <div class="tour_show">
+                        <img src="../assets/img/AttractionPage/temple_3.jpg" alt="Attraction image">
+                        <span class="overlay"></span>
                         <div class="tour_show-details">
-                            <h6 class="tour_show_details-heading">
-                              Luxor full day tour
-                              <span class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</span> 
-                             </h6>           
+                            <div class="tour_show_details-heading">
+                              <div class=" mb-1">
+                                  <h5>Luxor full day tour</h5>
+                                  <i class="fas fa-eye "></i>
+                              </div>
+                              <div>
+                                <p class="tour_tour-guide">Tour guide: 
+                                    <span class="text-bold">
+                                      <a href="#" class="tour-guide-name font-weight-bold">John Smith</a>
+                                    </span>
+                                  </p>
+                                  <span class="tour_show_details-heading-rating ml-1"><i class="fas fa-star"></i>&nbsp;4.5</span> 
+                              </div>
+                             
+                             </div>       
                         </div>
                         <form action="" class="tour_show_details-form">
-                            <div class="pretty p-default p-curve p-fill">
-                                <input type="checkbox" />
-                                <div class="state">
-                                    <label></label>
-                                </div>
+                            <div class="heart-shop-cart-cont">
+                              <label class="heart-shop-cart-label">
+                                <input class="shopping-cart-input" type="checkbox" />
+                                <i class="fas fa-shopping-cart"></i>
+                              </label>
                             </div>
                             <div class="heart-checkBox-cont">
                                 <label class="heart-checkBox-label">
-                                   <input class="heart-checkBox-input" type="checkbox" />
+                                    <input class="heart-checkBox-input" type="checkbox" />
                                     <i class="fas fa-heart"></i>              
                                 </label>    
                             </div>
                         </form>   
                       </div>
+
                       <div class="tour_info">
-                        <div class="trip_closing">
-                            <p class="tour_tour-guide">Tour guide: 
-                              <span class="text-bold">
-                                <a href="#" class="tour-guide-name">John Smith</a>
-                              </span>
-                            </p>
-                            <p class="text-danger tour_seats">only 4 seats left!!</p>
+                        <div class="attractions_tags">
+                          <h5>Attractions:</h5>
+                          <a href="##">Karnak temple</a>-
+                          <a href="##">Luxor temple </a>-
+                          <a href="##">Valley of the kings</a>   
                         </div>
-                        <div class="trip_reviews text-danger">(250 reviews)</div>
+                      
                         <div class="trip_book">
                           <button class="btn btn-primary">Book Now</button>
                           <p class="seat_price text-danger">30$ PER SEAT</p>
                         </div>
                       </div>
-                    </div>
+                  </div>
+                    
               </div> 
           </section>
       </div>
@@ -413,65 +481,69 @@
 
 
 
-  
-
-
-
-
   <!-- TOP RATED ATTRACTION 
   ======================================-->
   <div class="container">
       <div class="top_rated_attractions">
-        <h4 class="top_rated_attractions-heading">
-          Top Rated Attractions
-          <span>Find out the <span class="text-danger">MOST Recommneded</span> Attractions!</span>
-        </h4>
+          <div class="owl_slider_heading">
+            <h4 class="font-weight-bold owl_slider_heading_head">Top Rated Attractions</h4>
+            <p>Find out the <span class="text-danger"> MOST Recommended </span> Attractions</p>
+          </div>
+
         <div class="owl-carousel top_rated_attractions-slider">
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
+            <div class="owl-tours-tour">
+              <div class="tour_show">
+                  <img src="../assets/img/attraction.jpg" alt="">
+                  <div class="overlay"></div>
+              </div>
+                <div class="tour_info">
+                    <a src="##" class="attraction_name">Karnak temple</a>
+                    <p class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</p> 
+                </div>
             </div>
-          </div>
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
+            <div class="owl-tours-tour">
+              <div class="tour_show">
+                  <img src="../assets/img/attraction.jpg" alt="">
+                  <div class="overlay"></div>
+              </div>
+                <div class="tour_info">
+                    <a src="##" class="attraction_name">Karnak temple</a>
+                    <p class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</p> 
+                </div>
             </div>
-          </div>
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
+             <div class="owl-tours-tour">
+              <div class="tour_show">
+                  <img src="../assets/img/attraction.jpg" alt="">
+                  <div class="overlay"></div>
+              </div>
+                <div class="tour_info">
+                    <a src="##" class="attraction_name">Karnak temple</a>
+                    <p class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</p> 
+                </div>
             </div>
-          </div>
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
+             <div class="owl-tours-tour">
+              <div class="tour_show">
+                  <img src="../assets/img/attraction.jpg" alt="">
+                  <div class="overlay"></div>
+              </div>
+                <div class="tour_info">
+                    <a src="##" class="attraction_name">Karnak temple</a>
+                    <p class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</p> 
+                </div>
             </div>
-          </div>
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
+             <div class="owl-tours-tour">
+              <div class="tour_show">
+                  <img src="../assets/img/attraction.jpg" alt="">
+                  <div class="overlay"></div>
+              </div>
+                <div class="tour_info">
+                    <a src="##" class="attraction_name">Karnak temple</a>
+                    <p class="tour_show_details-heading-rating"><i class="fas fa-star"></i>&nbsp;4.5</p> 
+                </div>
             </div>
-          </div>
-          <div class="top_rate-attraction">
-            <img src="../assets/img/attraction.jpg" alt="Attraction Image">
-            <div class="attraction_details">
-              <button class="btn btn-link p-0 attraction_name">Karnak temple</button>
-              <h6 class="attraction_rate text-primary"><i class="fas fa-star"></i>4.5</h6>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+  </div>
 
   
 
@@ -490,23 +562,29 @@
 
 $('.owl-carousel.top-rated-tours-slider').owlCarousel({
     items: 1,
-    loop: false,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    rewind: true,
+    loop: true,
+    mouseDrag : true,
+    touchDrag : true,
+
     autoplay: true,
+    autoplayTimeout:7500,
+    autoplaySpeed : 1200,
+    autoplayHoverPause:true,
+    slideSpeed : 2000,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp',
     margin: 0,
     nav: true,
-    navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+    navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true,
+            mouseDrag : false
         },
         900:{
             items:1,
-            nav:false
+            nav:true
         },
         1300:{
             items:1,
@@ -516,12 +594,19 @@ $('.owl-carousel.top-rated-tours-slider').owlCarousel({
     
 })
 
-    $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
+$('.owl-carousel.top_rated_attractions-slider').owlCarousel({
     loop:true,
     margin:20,
     dots: false,
     nav: true,
+    autoplay:true,
+    slideSpeed : 2000,
+    autoplayTimeout:7500,
+    autoplaySpeed : 1200,
+    autoplayHoverPause:true,
     navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+    mouseDrag : true,
+    touchDrag : true,
     responsive:{
         0:{
             items:1,
@@ -534,16 +619,14 @@ $('.owl-carousel.top-rated-tours-slider').owlCarousel({
         900:{
             items:4,
             nav:true,
-            loop:false
         },
         1300:{
             items:5,
             nav:true,
-            loop:false
         }
-    }
-    
+    }   
 })
+
   </script>
 
   <script>
