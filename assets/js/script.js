@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+  // Change Logo depending on screen size
+
+  if ($(window).width() < 738) {
+    $('.main_logo').attr('src', "assets/img/tourshare.icon.png")
+  }
+
 
 // Navbar search box slide toggle
 //////////////////////////////////
@@ -53,7 +59,7 @@ $('.owl-carousel.last-minutes-tours-slider, .owl-carousel.top-rated-tours-slider
   autoplayTimeout:7500,
   autoplaySpeed : 1200,
   autoplayHoverPause:true,
-  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
   mouseDrag : true,
   touchDrag : true,
   responsive:{
@@ -88,7 +94,7 @@ $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
   autoplayTimeout:7500,
   autoplaySpeed : 1200,
   autoplayHoverPause:true,
-  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
   mouseDrag : true,
   touchDrag : true,
   responsive:{
@@ -137,7 +143,7 @@ var $owl = $('.owl-carousel.trip-attracions-slider').owlCarousel({
   autoplayTimeout:7500,
   autoplaySpeed : 1200,
   autoplayHoverPause:true,
-  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
   mouseDrag : true,
   touchDrag : true,
   responsive:{
