@@ -797,10 +797,11 @@ header.header .row {
   ===================================*/
 
   .mfp-container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 30px;
-    height: 10%;
+    padding: 0px 0px;
+    height: auto;
+    position: static;
 }
 
 .mfp-content {
@@ -815,7 +816,6 @@ header.header .row {
     width: 100%;
     height: auto;
     background: #fff;
-    margin-top: 1.5rem;
     border-radius: 5px;
    
   }
@@ -1077,7 +1077,7 @@ header.header .row {
 
 .trip_reviews {
     padding: 10px 40px;
-    margin: 15px 0 10px;
+    margin: 15px 0 0px;
    
 }
 
@@ -1110,6 +1110,10 @@ header.header .row {
 
 
 @media all and (max-width: 770px) {
+    .mfp-container {
+        width: 100%;
+    }
+
     .tour_full_info_header {
        flex-wrap: wrap;
        justify-content: space-between;

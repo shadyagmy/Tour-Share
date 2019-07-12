@@ -53,7 +53,7 @@ $('.owl-carousel.last-minutes-tours-slider, .owl-carousel.top-rated-tours-slider
   autoplayTimeout:7500,
   autoplaySpeed : 1200,
   autoplayHoverPause:true,
-  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
   mouseDrag : true,
   touchDrag : true,
   responsive:{
@@ -66,7 +66,7 @@ $('.owl-carousel.last-minutes-tours-slider, .owl-carousel.top-rated-tours-slider
       750:{
           items:2,
           nav:false,
-          mouseDrag : false
+          mouseDrag : true
       },
       1200:{
           items:3,
@@ -118,6 +118,7 @@ $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
 
 $('.open-popup-link').magnificPopup({
   type:'inline',
+  alignTop : true,
   midClick: true
 
 });
