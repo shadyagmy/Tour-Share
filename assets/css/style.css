@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6,p,a,button {
     text-transform: capitalize;
 }
 
+p {
+    font-weight: 500;
+}
+
 .btn {
     margin-bottom: 0;
     font-size: .9rem;
@@ -619,7 +623,8 @@ header.header .row {
     bottom: 0px;
     left: 0;
     width: auto;
-   
+    display: flex;
+    align-items: center;
 }
 
 .tour_show_details-heading {
@@ -682,8 +687,9 @@ header.header .row {
     margin-right: 12px;
 }
 
+
 .tour_show_details-form label i {
-    background: #eee;
+    background: #eeeeee33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -691,6 +697,8 @@ header.header .row {
     border-radius: 5px;
     font-size: 16px;
 }
+
+
 
 .heart-checkBox-input,
 .shopping-cart-input {
@@ -700,7 +708,7 @@ header.header .row {
   
   .heart-checkBox-label,
   .shop-cart-label {
-    color: #aaa;
+    color: #d2d2d2;
     cursor: pointer;
     font-size: 1.3rem;
     align-self: center;
@@ -711,21 +719,46 @@ header.header .row {
   
   .heart-checkBox-label:hover {
     color: #da1e26a6;
+    
   }
   
   .shop-cart-label:hover {
     color: #007BFF;
+    
   }
 
   
   .heart-checkBox-input:checked +  .fas {
     color: #DA1E26!important;
+    background: #eeeeeed1;
   }
   
   .shopping-cart-input:checked +  .fas {
     color: #007BFF;
+    background: #eeeeeed1;
   }
 
+.view_full_info:hover {
+    text-decoration: none;
+}
+
+.view_full_info i {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #444;
+    margin-left: 1rem;
+    transition: all .3s ease;
+}
+
+.view_full_info i:hover {
+    background: #fff;
+    color: #222;
+}
 
   .tour_info {
       display: flex;
@@ -758,6 +791,426 @@ header.header .row {
     font-size: .77rem;
     margin : .3rem 0;
   }
+
+
+  /* FULL TOUR INFORMATION  
+  ===================================*/
+
+  .mfp-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 10%;
+}
+
+.mfp-content {
+    vertical-align: baseline;  
+}
+
+.mfp-wrap {
+    top: 0!important;
+}
+
+  .full_tour_info {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+   
+  }
+
+  .mfp-close-btn-in .mfp-close {
+    color: #fff;
+    border: 1px solid #ddd;
+    font-weight: normal;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    right: 2rem;
+    top: 4rem;
+    opacity: 1;
+    padding: 0 0;
+    font-size: 35px;
+  }
+
+  .full_tour_info  .tour_full_info_header-img {
+    width: 100%;
+    height: 300px;
+
+  }
+
+  .tour_full_info_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 11px;
+  }
+
+  .tour_full_info_header-title {
+    width: 300px;
+    background: #064990;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .tour_full_info_header-heading {
+    font-size: inherit;
+    padding-left: 5px;
+  }
+
+  .seat_price-info {
+      margin-left: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 1rem;
+  }
+
+  .full_tour_info  .tour_guide {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6rem 1rem 6rem;
+    width: 100%;
+    margin: 60px auto 10px;
+    align-items: center;
+    border-bottom: 1px solid #D0D0D0;
+  }
+
+  .full_tour_info .tour_guide_info-basics {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+.full_tour_info  .tour_guide_avatar {
+    flex-basis: 150px;
+    margin-right: 1.5rem;
+}
+
+
+.full_tour_info  .tour_guide-name-and-rate a {
+    font-size: 1rem;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.full_tour_info  .tour_guide-name-and-rate .text-primary {
+    margin-right: 15px;
+}
+
+.full_tour_info .tour_guide .tour_guide_info-desc {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.65;
+    width: 80%;
+}
+
+.trip_details,
+.trip-attraction{
+    padding: 1rem 3rem;
+}
+
+.trip_details-table {
+    border: 1px solid #c5c5c5;
+    padding: 1.3rem 1rem 0;
+    margin-top: -.5rem;
+}
+
+.trip_details-table > div:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.trip_details-table  h6 {
+    font-weight: bold;
+}
+
+.trip_details-table  span {
+    font-weight: normal;
+}
+
+.trip_details-table .start-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-attraction-container {
+    margin-top: 1rem;
+    padding: .5rem 3rem;
+}
+
+.trip-attracions-slider{
+    padding: 10px 40px;
+    margin: 15px 0 10px;
+}
+
+
+.trip-attracions-slider .owl-nav {
+    top: 47%;
+    left: 0px;
+    width: 100%;
+}
+
+.trip-attracions-slider .trip-attraction {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 5px;
+   
+}
+
+.trip-attraction-photo {
+    flex-basis: 170%;
+    max-width: 300px;
+    min-width: 160px;
+}
+
+.trip-attraction-photo  img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.trip_attraction_info-basics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip_attraction-name-and-rate {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.trip_attraction-name-and-rate > span {
+    color: #22aaec;
+    margin-left: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.trip_attraction-name-and-rate > span i {
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.trip-attraction_info-desc {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 3px;
+    line-height: 1.45; 
+}
+
+.tour_guide_info-desc button {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+
+/* trip_includes_and_awards */
+
+.trip_includes_and_awards {
+    padding: 10px 40px;
+    margin: 15px 0 10px;
+    position: relative;
+    min-height: 165px;
+}
+
+.trip_includes_and_awards .include .include-head,
+.trip_includes_and_awards .awards .awards-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trip_includes_and_awards .include .include-head i {
+    font-size: 30px;
+    color: #52BE61;
+}
+
+.trip_includes_and_awards .include .include-head span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.include-content,
+.awards-content {
+    margin-left: 20px;
+}
+
+.include-content .btn,
+.awards-content .btn {
+    margin-right: 10px;
+    border-radius: 40px;
+    padding: .4rem .8rem;
+}
+
+
+
+.trip_includes_and_awards .seperator {
+    border-right: 1px solid #D0D0D0;
+    position: absolute;
+    top: 59%;
+    left: 49%;
+    transform: translate(1%, -65%);
+    height: 100%;
+}
+
+.trip_includes_and_awards .awards .awards-head span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.trip_reviews {
+    padding: 10px 40px;
+    margin: 15px 0 10px;
+   
+}
+
+.trip_reviews-container {
+    position: relative;
+    padding: 0 .5rem 3rem;
+}
+
+.trip_reviews-container > button {
+    position: absolute;
+    right: 9.5rem;
+    bottom: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.trip_reviews .tour_guide {
+    padding: 15px 1rem 0rem 1rem;
+    width: 80%;
+    margin: 30px auto 0px;
+    border: none;
+}
+
+.trip_reviews .tour_guide .review-date {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0 .2rem;
+}
+
+
+
+@media all and (max-width: 770px) {
+    .tour_full_info_header {
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+
+    .seat_price-info {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .tour_full_info_header .tour_show_details-form {
+        top: auto;
+    }
+
+    .full_tour_info .tour_guide {
+        padding: 0px 2rem 1rem 2rem;
+    }
+
+    .full_tour_info .tour_guide_avatar {
+        flex-basis: 250px;
+        margin-right: 1rem;
+    }
+
+    .trip_details, .trip-attraction {
+        padding: 1rem;
+    }
+
+    .trip_details-desc {
+        margin-bottom: 1rem;
+    }
+
+    .trip_details-table {
+        padding: 2.3rem 1rem 2rem;
+        margin-top: 0rem;
+    }
+
+    .trip-attraction-container {
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    .trip-attracions-slider {
+        padding: 10px 20px;
+    }
+
+    .trip-attraction-photo {
+        flex-basis: 300%;
+        max-width: 253px;
+        min-width: 100px;
+    }
+
+    .trip_includes_and_awards {
+        padding: 10px 10px;
+    }
+
+    .trip_includes_and_awards .btn {
+        margin-bottom: 1rem;
+        padding: .3rem .6rem;
+        font-size: .8rem;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .include-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .trip_reviews {
+        padding: 10px 20px;
+       
+    }
+
+    .trip_reviews  .tour_guide {
+        width: 100%;
+        margin: 20px auto 0px;
+        padding: 0px 0rem 1rem 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
  /* Media queries for owl carosal sliders */
@@ -1451,10 +1904,6 @@ header.header .row {
 
 /*  ATTRACTION TOURS 
 ==============================*/
-
-.top-rated-tours.attraction-tours {
-
-}
 
 .top-rated-tours.attraction-tours .top-rated-tours-slider .owl-tours-tour .tour_show {
     background-image: linear-gradient( to top, rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.4));

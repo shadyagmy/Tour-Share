@@ -40,6 +40,127 @@ $('.nav_search-box-city input').on("keydown keypress", function() {
 
 
 
+// OWL CAROSAL ADJUSTMENT
+// ==========================
+
+$('.owl-carousel.last-minutes-tours-slider, .owl-carousel.top-rated-tours-slider, .owl-carousel.tour_guides_slider').owlCarousel({
+  loop:true,
+  margin:20,
+  dots: false,
+  nav: true,
+  autoplay:true,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          mouseDrag : false
+         
+      },
+      750:{
+          items:2,
+          nav:false,
+          mouseDrag : false
+      },
+      1200:{
+          items:3,
+          nav:true,
+          mouseDrag : true
+      }
+  }
+  
+})
+
+
+$('.owl-carousel.top_rated_attractions-slider').owlCarousel({
+  loop:true,
+  margin:20,
+  dots: false,
+  nav: true,
+  autoplay:true,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      600:{
+          items:2,
+          nav:false,
+          mouseDrag : false
+      },
+      900:{
+          items:4,
+          nav:true,
+          mouseDrag : true
+      },
+      1300:{
+          items:5,
+          nav:true,
+      }
+  }   
+})
+
+
+
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true
+
+});
+
+$('.open-popup-link').on('click', function() {
+  $owl.trigger('refresh.owl.carousel');
+})
+
+var $owl = $('.owl-carousel.trip-attracions-slider').owlCarousel({
+  loop:true,
+  margin:30,
+  dots: false,
+  nav: true,
+  autoplay:false,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="../assets/img/arrow_left.png" alt="arrow left">','<img src="../assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      600:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      900:{
+          items:2,
+          nav:true,
+      },
+      1300:{
+          items:2,
+          nav:true,
+      }
+  }   
+})
+
 
 
 
