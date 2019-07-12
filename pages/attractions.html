@@ -41,7 +41,7 @@
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img class=" img-fluid" src="../assets/img/tourshare-logo.png" alt="card image" />
+          <img class="main_logo img-fluid" src="../assets/img/tourshare-logo.png" alt="card image" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -638,7 +638,21 @@ $('.owl-carousel.top_rated_attractions-slider').owlCarousel({
         'imageFadeDuration' : 600,
         'resizeDuration' : 600
 
-      })
+      });
+  </script>
+
+  <script>
+      if ($(window).width() < 738) {
+        $('.main_logo').attr('src', "../assets/img/tourshare.icon.png")
+      }
+
+      $(window).on('resize', function(){
+          if ($(window).width() < 738) {
+            $('.main_logo').attr('src', "../assets/img/tourshare.icon.png")
+          }else {
+            $('.main_logo').attr('src', "../assets/img/tourshare-logo.png")
+          }
+      });
   </script>
 </body>
 

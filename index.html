@@ -53,7 +53,7 @@
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img class=" img-fluid" src="assets/img/tourshare-logo.png" alt="card image" />
+        <img class="main_logo img-fluid" src="assets/img/tourshare-logo.png" alt="card image" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -484,7 +484,7 @@
     <!-- Trip Includes and Rewards -->
     <div class="trip_includes_and_awards">
       <div class="row">
-        <div class="col-sm-5 include">
+        <div class="col-sm-12 include">
           <h5 class="include-head">
             <i class="far fa-check-square"></i>
             <span>INCLUDES</span>
@@ -493,16 +493,6 @@
             <button class="btn btn-primary active">Transportation</button>
             <button class="btn btn-primary active">Entrance Fees</button>
           </div>
-        </div>
-        <hr class=" seperator"/>
-        <div class=" offset-sm-2 col-sm-5 awards">
-            <h5 class="awards-head">
-                <span>AWARDS</span>
-              </h5>
-              <div class="awards-content">
-                <button class="btn btn-primary active">Top rated</button>
-                <button class="btn btn-primary active">Best selling trips</button>
-              </div>
         </div>
       </div>
     </div>
@@ -967,6 +957,8 @@
 
 
 </div>  <!-- OUTER CONTAINER -->
+
+
   <a class="p-1" href="pages/attractions.html">Go To Attraction Page</a>
 
 
@@ -993,7 +985,135 @@
   <script>
 
 
+  if ($(window).width() < 738) {
+      $('.main_logo').attr('src', "assets/img/tourshare.icon.png")
+  }
 
+  $(window).on('resize', function(){
+    if ($(window).width() < 738) {
+      $('.main_logo').attr('src', "assets/img/tourshare.icon.png")
+    }else {
+      $('.main_logo').attr('src', "assets/img/tourshare-logo.png")
+    }
+});
+
+  $('.owl-carousel.last-minutes-tours-slider, .owl-carousel.top-rated-tours-slider, .owl-carousel.tour_guides_slider').owlCarousel({
+  loop:true,
+  margin:20,
+  dots: false,
+  nav: true,
+  autoplay:true,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          mouseDrag : false
+         
+      },
+      750:{
+          items:2,
+          nav:false,
+          mouseDrag : true
+      },
+      1200:{
+          items:3,
+          nav:true,
+          mouseDrag : true
+      }
+  }
+  
+})
+
+
+$('.owl-carousel.top_rated_attractions-slider').owlCarousel({
+  loop:true,
+  margin:20,
+  dots: false,
+  nav: true,
+  autoplay:true,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      600:{
+          items:2,
+          nav:false,
+          mouseDrag : false
+      },
+      900:{
+          items:4,
+          nav:true,
+          mouseDrag : true
+      },
+      1300:{
+          items:5,
+          nav:true,
+      }
+  }   
+})
+
+
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  alignTop : true,
+  midClick: true
+
+});
+
+$('.open-popup-link').on('click', function() {
+  $owl.trigger('refresh.owl.carousel');
+})
+
+var $owl = $('.owl-carousel.trip-attracions-slider').owlCarousel({
+  loop:true,
+  margin:30,
+  dots: false,
+  nav: true,
+  autoplay:false,
+  slideSpeed : 2000,
+  autoplayTimeout:7500,
+  autoplaySpeed : 1200,
+  autoplayHoverPause:true,
+  navText: ['<img src="assets/img/arrow_left.png" alt="arrow left">','<img src="assets/img/arrow_right.png" alt="arrow left">'],
+  mouseDrag : true,
+  touchDrag : true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      600:{
+          items:1,
+          nav:true,
+          mouseDrag : false
+      },
+      900:{
+          items:1,
+          nav:true,
+      },
+      1300:{
+          items:2,
+          nav:true,
+      }
+  }   
+})
 
 
     // $(function () {
