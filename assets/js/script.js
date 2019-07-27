@@ -1,7 +1,14 @@
 $( document ).ready(function() {
 
-  // Change Logo depending on screen size
 
+  // Popup toggle
+$(".view_full_info").on("click", () => {
+  $("#full_tour_info").css({"height" : "100%"})
+})
+  
+$(".close-modal").on("click", () => {
+  $("#full_tour_info").css({"height" : "0"})
+})
 
 
 

@@ -693,6 +693,7 @@ header.header .row {
     padding: 4px;
     border-radius: 5px;
     font-size: 16px;
+    transition: all .2s ease;
 }
 
 
@@ -711,12 +712,13 @@ header.header .row {
     align-self: center;
     transition: color 0.2s ease-in-out;
     position: relative;
+    transition: all .2s ease;
    
   }
   
   .heart-checkBox-label:hover {
     color: #da1e26a6;
-    
+
   }
   
   .shop-cart-label:hover {
@@ -724,32 +726,34 @@ header.header .row {
     
   }
 
-  
-  .heart-checkBox-input:checked +  .fas {
+  .heart-checkBox-input:checked +  .fas, .heart-checkBox-label:hover i  {
     color: #DA1E26!important;
-    background: #eeeeeed1;
+    background: #fff;
   }
   
-  .shopping-cart-input:checked +  .fas {
+  .shopping-cart-input:checked +  .fas, .shop-cart-label:hover i  {
     color: #007BFF;
-    background: #eeeeeed1;
+    background: #fff;
   }
 
 .view_full_info:hover {
     text-decoration: none;
 }
 
+
+
 .view_full_info i {
     background: #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px;
+    padding: 5px;
     border-radius: 5px;
     font-size: 16px;
     color: #444;
-    margin-left: 1rem;
+    margin-left: .5rem;
     transition: all .3s ease;
+    margin-bottom: .1rem;
 }
 
 .view_full_info i:hover {
@@ -793,24 +797,58 @@ header.header .row {
   /* FULL TOUR INFORMATION  
   ===================================*/
 
-  .mfp-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0px 0px;
-    height: auto;
-    position: static;
+/* Modal */
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: none!important;
+        width: 100%;
+        margin:0 auto;
+    }
+}
+.full_tour_info.modal{
+    display: block!important;
+    height: 0;
+    /* z-index: -1000; */
+    transition: height .25s linear;
 }
 
-.mfp-content {
-    vertical-align: baseline;  
+.modal-open .modal {
+    padding-right: 0px!important;
+    height: 94%!important;
 }
 
-.mfp-wrap {
-    top: 0!important;
+.modal-content {
+    border: none;
+}
+
+.modal-content .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: .7;
+    transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.modal-content .close.close-modal:hover,
+.close.close-modal:focus,.close.close-modal:active {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(3px);
+}
+
+.modal-content .close-modal {
+    color: #fff;
+    font-size: 1.9rem;
+}
+
+.modal-header {
+    display: block;
+
 }
 
   .full_tour_info {
-    width: 70%;
+    width:70vw;
     height: auto;
     background: #fff;
     border-radius: 10px;
@@ -819,22 +857,6 @@ header.header .row {
    
   }
 
-  .mfp-close-btn-in .mfp-close {
-    color: #fff;
-    border: 1px solid #fff;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    right: 4rem;
-    top: 2rem;
-    opacity: 1;
-    padding: .1rem;
-    font-size: 35px;
-    font-weight: normal;
-    border-radius: 50%;
-    box-sizing: content-box;
-  }
 
   .full_tour_info  .tour_full_info_header-img {
     width: 100%;
@@ -890,7 +912,7 @@ header.header .row {
   .full_tour_info  .tour_guide {
     display: flex;
     justify-content: space-between;
-    padding: 0px 1rem 1rem 1rem;
+    padding: .5px 1rem 1.5rem;
     width: 100%;
     margin: 30px auto 10px;
     align-items: center;
@@ -932,7 +954,7 @@ header.header .row {
 
 .trip_details,
 .trip-attraction{
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
 }
 
 
@@ -940,9 +962,9 @@ header.header .row {
     font-size: 13px;
 }
 .trip_details-table {
-    border: 1px solid #c5c5c5;
-    padding: 1.5rem 1rem 1.5rem;
-    margin-top: -.5rem;
+    border: 1px solid #eaeaea;
+    padding: 2rem 1rem 1.5rem;
+    margin-top: -1.5rem;
 }
 
 .trip_details-table > div:not(:last-of-type) {
@@ -975,8 +997,9 @@ header.header .row {
 }
 
 .trip-attracions-slider{
-    padding: 4px 30px;
-    margin: 15px 0 10px;
+    padding: 4px 40px;
+    margin: 15px auto;
+    width: 85%;
 }
 
 
@@ -1038,7 +1061,8 @@ header.header .row {
     font-weight: normal;
     text-align: left;
     margin-top: 3px;
-    line-height: 1.45; 
+    line-height: 1.45;
+    width: 85%;
 }
 
 .tour_guide_info-desc button {
@@ -1228,7 +1252,7 @@ header.header .row {
     .full_tour_info {
         width: 95%;
         border-radius: 5px;
-        margin: 1rem auto;
+        margin: 1rem auto 0px;
     }
 
     .mfp-close-btn-in .mfp-close {
